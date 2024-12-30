@@ -10,59 +10,47 @@
 </head>
 
 <body class="container">
-    <header class="header">
-        <a class="criss__cross-link" href="#">
-            <img src="./img/criss_cross.svg" alt="Close registration form">
-        </a>
-        <div class="title__box">
-            <h3 class="title__box-login">Login<span class="title__box-line">
-                    <hr class="line">
-                </span>
-            </h3>
-            <h3 class="title__box-register">Register</h3>
-            </h3>
+    <a class="criss__cross-link" href="#">
+        <img src="./img/criss_cross.svg" alt="Close registration form">
+    </a>
+    <div class="title__box">
+        <h3 class="title__box-login">Login<span class="title__box-line">
+                <hr class="line">
+            </span>
+        </h3>
+        <h3 class="title__box-register">Register</h3>
+        </h3>
+    </div>
+
+    <p class="form__title">Enter your email and password to register.</p>
+    <div class="form__box">
+        <form class="form" action="https://fom.in.ua/echo" method="post" target="_self">
+            <input class="username" type="text" name="username" id="username" placeholder="Username" required>
+            <input class="email" type="email" name="email" id="email" placeholder="Enter your email address" required>
+            <input class="password" type="password" name="password" id="password" placeholder="Password" required>
+            <input class="confirm__password" type="password" name="confirm_password" id="confirm_password"
+                placeholder="Confirm Password" required>
+            <button class="button" type="submit">
+                Register
+            </button>
+        </form>
+    </div>
+
+    <div class="register__box">
+        <div class="line-with-text">
+            <p>
+                Or register with
+            </p>
         </div>
-    </header>
-
-    <main>
-        <section>
-            <p class="form__title">Enter your email and password to register.</p>
-            <div class="form__box">
-                <form class="form" action="https://fom.in.ua/echo" method="post" target="_self">
-                    <input class="username" type="text" name="username" id="username" placeholder="Username" required>
-                    <input class="email" type="email" name="email" id="email" placeholder="Enter your email address"
-                        required>
-                    <input class="password" type="password" name="password" id="password" placeholder="Password"
-                        required>
-                    <input class="confirm__password" type="password" name="confirm_password" id="confirm_password"
-                        placeholder="Confirm Password" required>
-                    <button class="button" type="submit">
-                        Register
-                    </button>
-                </form>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <div class="line-with-text">
-                <p>
-                    Or register with
-                </p>
-            </div>
-            <div class="register__google">
-                <a class="google__link" href="#">
-                    <img class="google_logo" src="./img/google_logo.svg" alt="google_logo">
-                    Continue with Google
-                </a>
-            </div>
-            <div class="register__facebook">
-                <a class="facebook__link" href="#">
-                    <img class="facebook__logo" src="./img/facebook_logo.svg" alt="facebook_logo">
-                    Continue with Facebook
-                </a>
-            </div>
-        </footer>
-    </main>
+        <a class="google__link" href="#">
+            <img class="google_logo" src="./img/google_logo.svg" alt="google_logo">
+            Continue with Google
+        </a>
+        <a class="facebook__link" href="#">
+            <img class="facebook__logo" src="./img/facebook_logo.svg" alt="facebook_logo">
+            Continue with Facebook
+        </a>
+    </div>
 </body>
 
 </html>

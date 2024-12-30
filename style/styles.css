@@ -5,18 +5,15 @@ body {
     font-family: 'Cera Pro', sans-serif;
 }
 
-.header {
-    margin: 13px 0 0 0;
-}
-
 .container {
+    margin-top: 13px;
     margin-left: 100px;
     margin-right: 100px;
     max-width: 500px;
 }
 
 .criss__cross-link {
-    margin: 0 0 21px 469px;
+    margin: 13px 0 21px 469px;
 }
 
 .form__box {
@@ -60,7 +57,10 @@ body {
     color: #3D3D3D;
 }
 
-.username, .email, .password, .confirm__password {
+.username,
+.email,
+.password,
+.confirm__password {
     display: block;
     width: 300px;
     height: auto;
@@ -91,7 +91,7 @@ body {
     cursor: pointer;
 }
 
-.footer {
+.register__box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,7 +116,11 @@ body {
     position: relative;
 }
 
-.register__google {
+.google_logo {
+    margin: 0 9px 0px 0;
+}
+
+.google__link {
     width: 315px;
     border-width: 1px;
     border-radius: 5px;
@@ -128,23 +132,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 40px;
-}
-
-.google_logo {
-    margin: 0 9px -5px 0;
-}
-
-.google__link {
     text-decoration: none;
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
     color: #727272;
-    margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.register__facebook {
+.facebook__logo {
+    margin: 0 9px 0px 0;
+}
+
+.facebook__link {
     width: 315px;
     border-width: 1px;
     border-radius: 5px;
@@ -155,13 +155,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 40px;
-}
-
-.facebook__logo {
-    margin: 0 9px -5px 0;
-}
-
-.facebook__link {
     text-decoration: none;
     font-weight: 500;
     font-size: 13px;
