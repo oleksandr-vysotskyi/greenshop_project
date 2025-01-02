@@ -161,3 +161,36 @@ body {
     line-height: 16px;
     color: #727272;
 }
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-toggle {
+    display: none;
+}
+
+.toggle-label {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-90%);
+    cursor: pointer;
+}
+
+.icon-eye,
+.icon-eye-slash {
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.password-toggle:not(:checked)~.toggle-label .icon-eye {
+    display: block;
+}
+
+.password-toggle:checked~.toggle-label .icon-eye-slash {
+    display: block;
+}

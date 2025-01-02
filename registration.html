@@ -27,9 +27,23 @@
         <form class="form" action="https://fom.in.ua/echo" method="post" target="_self">
             <input class="username" type="text" name="username" id="username" placeholder="Username" required>
             <input class="email" type="email" name="email" id="email" placeholder="Enter your email address" required>
-            <input class="password" type="password" name="password" id="password" placeholder="Password" required>
-            <input class="confirm__password" type="password" name="confirm_password" id="confirm_password"
-                placeholder="Confirm Password" required>
+            <div class="password-container">
+                <input class="password" type="password" name="password" id="password" placeholder="Password" required>
+                <input class="password-toggle" type="checkbox" checked id="toggle-password">
+                <label for="toggle-password" class="toggle-label">
+                    <img class="icon-eye" src="./img/open_eye.svg" alt="Show password">
+                    <img class="icon-eye-slash" src="./img/closed_eye.svg" alt="Hide password">
+                </label>
+            </div>
+            <div class="password-container">
+                <input class="confirm__password" type="password" name="confirm_password" id="confirm_password"
+                    placeholder="Confirm Password" required>
+                <input class="password-toggle" type="checkbox" checked id="toggle-confirm-password">
+                <label for="toggle-confirm-password" class="toggle-label">
+                    <img class="icon-eye-slash" src="./img/closed_eye.svg" alt="Hide password">
+                    <img class="icon-eye" src="./img/open_eye.svg" alt="Show password">
+                </label>
+            </div>
             <button class="button" type="submit">
                 Register
             </button>
