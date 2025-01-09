@@ -99,11 +99,9 @@ body {
 .line-with-text {
     width: 315px;
     text-align: center;
-    position: relative;
     margin: 0 0 27px;
     font-weight: 400;
     font-size: 13px;
-    line-height: 16px;
     border-bottom: 1px solid #ccc;
     line-height: 0px;
 }
@@ -112,7 +110,6 @@ body {
     display: inline;
     background: #fff;
     padding: 0 10px;
-    position: relative;
 }
 
 .google_logo {
