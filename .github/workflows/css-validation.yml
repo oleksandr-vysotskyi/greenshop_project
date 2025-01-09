@@ -10,11 +10,34 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install curl
-        run: sudo apt-get install -y curl
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl jq
 
       - name: Validate CSS
         run: |
           for file in $(find . -name "*.css"); do
-             curl -s -F "text=@$file" https://jigsaw.w3.org/css-validator/validator -F "output=json" | jq '.cssvalidation.warnings + .cssvalidation.errors' || exit 1
-           done
+            echo "Validating: $file"
+            response=$(curl -s -F "text=@$file" https://jigsaw.w3.org/css-validator/validator -F "output=json")
+
+            if echo "$response" | jq empty > /dev/null 2>&1; then
+              errors=$(echo "$response" | jq '.cssvalidation.errors')
+              warnings=$(echo "$response" | jq '.cssvalidation.warnings')
+
+              echo "File: $file"
+              echo "Warnings: $warnings"
+              echo "Errors: $errors"
+
+              if [ "$errors" -gt 0 ]; then
+                echo "Validation failed for $file with $errors errors."
+                exit 1
+              fi
+            else
+              echo "Error: Invalid response from API for $file"
+              echo "$response"
+              exit 1
+            fi
+          done
+
+          echo "All CSS files validated successfully."
