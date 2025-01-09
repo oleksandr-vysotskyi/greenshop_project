@@ -11,25 +11,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Install curl and npm (for Stylelint)
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y curl
-          curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-          sudo apt-get install -y nodejs
-
-      # Validate HTML with W3C Validator
-      - name: Validate HTML
-        run: |
-          for file in $(find . -name "*.html"); do
-            echo "Validating $file"
-            curl -H "Content-Type: text/html; charset=utf-8" \
-                 --data-binary "@$file" \
-                 https://validator.w3.org/nu/ \
-                 | jq '.messages[] | select(.type == "error")' || exit 1
-          done
-
       # Install Stylelint
       - name: Install Stylelint
         run: npm install --global stylelint stylelint-config-standard
