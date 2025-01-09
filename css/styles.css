@@ -105,6 +105,7 @@ body {
     font-size: 13px;
     line-height: 16px;
     border-bottom: 1px solid #ccc;
+    line-height: 0px;
 }
 
 .line-with-text p {
