@@ -20,7 +20,7 @@ jobs:
 
       - name: Run CSSLint API
         run: |
-          curl -X POST -d "css=$(cat all-css-files.css)" https://csslint.net/api/ | tee lint-result.json
+          curl -X POST -d "css=$(cat all-css-files.css)" https://csslint.net/v1/validate/ | tee lint-result.json
 
       - name: Check for lint errors
         run: |
