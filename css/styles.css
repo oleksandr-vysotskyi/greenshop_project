@@ -1,19 +1,19 @@
 body {
     margin: 0;
     padding: 0;
-    background: #FFFFFF;
+    background: #FFF;
     font-family: 'Cera Pro', sans-serif;
 }
 
-.container {
-    margin-top: 13px;
-    margin-left: 100px;
-    margin-right: 100px;
+
+.container__form {
     max-width: 500px;
+    margin: auto;
 }
 
 .criss__cross-link {
-    margin: 13px 0 21px 469px;
+    display: block;
+    margin: 13px 0 21px 487px;
 }
 
 .form__box {
@@ -23,7 +23,7 @@ body {
 }
 
 .title__box {
-    margin: 0 0 40px 0;
+    margin: 0 0 40px;
     text-align: center;
 }
 
@@ -64,8 +64,8 @@ body {
     display: block;
     width: 300px;
     height: auto;
-    margin: 0 0 16px 0;
-    padding: 12px 0px 12px 14px;
+    margin: 0 0 16px;
+    padding: 12px 0 12px 14px;
     border-radius: 5px;
     border-width: 1px;
     border-style: solid;
@@ -77,21 +77,20 @@ body {
 
 .button {
     width: 315px;
-    margin: 0 0 36px 0;
-    text-align: center;
+    margin: 0 0 36px;
     border: none;
-    padding: 16px 0px 13px 0px;
+    padding: 16px 0 13px;
     border-radius: 5px;
     font-weight: 700;
     font-size: 16px;
     line-height: 16px;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFF;
     background-color: #46A358;
     cursor: pointer;
 }
 
-.register__box {
+.register__with-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,24 +99,21 @@ body {
 .line-with-text {
     width: 315px;
     text-align: center;
-    position: relative;
-    margin: 0 0 27px 0;
+    margin: 0 0 27px;
     font-weight: 400;
     font-size: 13px;
-    line-height: 16px;
     border-bottom: 1px solid #ccc;
-    line-height: 0;
+    line-height: 0px;
 }
 
 .line-with-text p {
     display: inline;
     background: #fff;
     padding: 0 10px;
-    position: relative;
 }
 
 .google_logo {
-    margin: 0 9px 0px 0;
+    margin: 0 9px;
 }
 
 .google__link {
@@ -126,7 +122,7 @@ body {
     border-radius: 5px;
     border-style: solid;
     border-color: #EAEAEA;
-    margin: 0 0 12px 0;
+    margin: 0 0 12px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -141,7 +137,7 @@ body {
 }
 
 .facebook__logo {
-    margin: 0 9px 0px 0;
+    margin: 0 9px 0 0;
 }
 
 .facebook__link {
@@ -153,7 +149,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    align-items: center;
     height: 40px;
     text-decoration: none;
     font-weight: 500;
@@ -162,35 +157,7 @@ body {
     color: #727272;
 }
 
-.password-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.password-toggle {
-    display: none;
-}
-
-.toggle-label {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-90%);
-    cursor: pointer;
-}
-
-.icon-eye,
-.icon-eye-slash {
-    width: 20px;
-    height: 20px;
-    display: none;
-}
-
-.password-toggle:not(:checked)~.toggle-label .icon-eye {
-    display: block;
-}
-
-.password-toggle:checked~.toggle-label .icon-eye-slash {
-    display: block;
+.container {
+    max-width: 1200px;
+    margin: auto;
 }

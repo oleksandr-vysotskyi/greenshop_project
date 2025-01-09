@@ -4,66 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Cera+Pro:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cera+Pro:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Registration form</title>
 </head>
 
-<body class="container">
-    <a class="criss__cross-link" href="#">
-        <img src="./img/criss_cross.svg" alt="Close registration form">
-    </a>
-    <div class="title__box">
-        <h3 class="title__box-login">Login<span class="title__box-line">
-                <hr class="line">
-            </span>
-        </h3>
-        <h3 class="title__box-register">Register</h3>
-        </h3>
-    </div>
-
-    <p class="form__title">Enter your email and password to register.</p>
-    <div class="form__box">
-        <form class="form" action="https://fom.in.ua/echo" method="post" target="_self">
-            <input class="username" type="text" name="username" id="username" placeholder="Username" required>
-            <input class="email" type="email" name="email" id="email" placeholder="Enter your email address" required>
-            <div class="password-container">
+<body>
+    <div class="container__form">
+        <div class="criss__cross-box">
+            <a class="criss__cross-link" href="#">
+                <img src="./img/criss_cross.svg" alt="Close registration form">
+            </a>
+        </div>
+        <div class="title__box">
+            <h3 class="title__box-login">
+                Login
+            </h3>
+            <hr class="line">
+            <h3 class="title__box-register">
+                Register
+            </h3>
+        </div>
+        <p class="form__title">Enter your email and password to register.</p>
+        <div class="form__box">
+            <form class="form" action="https://fom.in.ua/echo" method="post" target="_self">
+                <input class="username" type="text" name="username" id="username" placeholder="Username" required>
+                <input class="email" type="email" name="email" id="email" placeholder="Enter your email address"
+                    required>
                 <input class="password" type="password" name="password" id="password" placeholder="Password" required>
-                <input class="password-toggle" type="checkbox" checked id="toggle-password">
-                <label for="toggle-password" class="toggle-label">
-                    <img class="icon-eye" src="./img/open_eye.svg" alt="Show password">
-                    <img class="icon-eye-slash" src="./img/closed_eye.svg" alt="Hide password">
-                </label>
-            </div>
-            <div class="password-container">
                 <input class="confirm__password" type="password" name="confirm_password" id="confirm_password"
                     placeholder="Confirm Password" required>
-                <input class="password-toggle" type="checkbox" checked id="toggle-confirm-password">
-                <label for="toggle-confirm-password" class="toggle-label">
-                    <img class="icon-eye-slash" src="./img/closed_eye.svg" alt="Hide password">
-                    <img class="icon-eye" src="./img/open_eye.svg" alt="Show password">
-                </label>
-            </div>
-            <button class="button" type="submit">
-                Register
-            </button>
-        </form>
-    </div>
-
-    <div class="register__box">
-        <div class="line-with-text">
-            <p>
-                Or register with
-            </p>
+                <button class="button" type="submit">
+                    Register
+                </button>
+            </form>
         </div>
-        <a class="google__link" href="#">
-            <img class="google_logo" src="./img/google_logo.svg" alt="google_logo">
-            Continue with Google
-        </a>
-        <a class="facebook__link" href="#">
-            <img class="facebook__logo" src="./img/facebook_logo.svg" alt="facebook_logo">
-            Continue with Facebook
-        </a>
+        <div class="register__with-box">
+            <div class="line-with-text">
+                <p>
+                    Or register with
+                </p>
+            </div>
+            <a class="google__link" href="#">
+                <img class="google_logo" src="./img/google_logo.svg" alt="google_logo">
+                Continue with Google
+
+            </a>
+            <a class="facebook__link" href="#">
+                <img class="facebook__logo" src="./img/facebook_logo.svg" alt="facebook_logo">
+                Continue with Facebook
+            </a>
+        </div>
     </div>
 </body>
 
