@@ -1,43 +1,22 @@
-name: W3C CSS Validation
+name: CSS Validation
 
 on:
   pull_request:
 
 jobs:
-  validate-css:
+  lint-css:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y curl jq
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
 
-      - name: Validate CSS
-        run: |
-          for file in $(find . -name "*.css"); do
-            echo "Validating: $file"
-            response=$(curl -s -F "text=@$file" https://jigsaw.w3.org/css-validator/validator -F "output=json")
+      - name: Install Stylelint
+        run: npm install -g stylelint stylelint-config-standard
 
-            if echo "$response" | jq empty > /dev/null 2>&1; then
-              errors=$(echo "$response" | jq '.cssvalidation.errors')
-              warnings=$(echo "$response" | jq '.cssvalidation.warnings')
-
-              echo "File: $file"
-              echo "Warnings: $warnings"
-              echo "Errors: $errors"
-
-              if [ "$errors" -gt 0 ]; then
-                echo "Validation failed for $file with $errors errors."
-                exit 1
-              fi
-            else
-              echo "Error: Invalid response from API for $file"
-              echo "$response"
-              exit 1
-            fi
-          done
-
-          echo "All CSS files validated successfully."
+      - name: Run Stylelint
+        run: stylelint "**/*.css"
