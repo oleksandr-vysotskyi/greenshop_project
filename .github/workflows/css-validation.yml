@@ -10,13 +10,23 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
+      - name: Install curl
+        run: sudo apt-get install curl
 
-      - name: Install Stylelint
-        run: npm install -g stylelint stylelint-config-standard
+      - name: Get all CSS files
+        run: |
+          css_files=$(find . -name "*.css" -exec cat {} \;)
+          echo "$css_files" > all-css-files.css
 
-      - name: Run Stylelint
-        run: stylelint "**/*.css"
+      - name: Run CSSLint API
+        run: |
+          curl -X POST -d "css=$(cat all-css-files.css)" https://csslint.net/api/ | tee lint-result.json
+
+      - name: Check for lint errors
+        run: |
+          if grep -q "errors" lint-result.json; then
+            echo "CSS has some errors!"
+            exit 1
+          else
+            echo "CSS has no erros."
+          fi
