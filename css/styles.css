@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #FFFFFF;
+    background: #FFF;
     font-family: 'Cera Pro', sans-serif;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .title__box {
-    margin: 0 0 40px 0;
+    margin: 0 0 40px;
     text-align: center;
 }
 
@@ -64,8 +64,8 @@ body {
     display: block;
     width: 300px;
     height: auto;
-    margin: 0 0 16px 0;
-    padding: 12px 0px 12px 14px;
+    margin: 0 0 16px;
+    padding: 12px 0 12px 14px;
     border-radius: 5px;
     border-width: 1px;
     border-style: solid;
@@ -77,16 +77,15 @@ body {
 
 .button {
     width: 315px;
-    margin: 0 0 36px 0;
-    text-align: center;
+    margin: 0 0 36px;
     border: none;
-    padding: 16px 0px 13px 0px;
+    padding: 16px 0 13px;
     border-radius: 5px;
     font-weight: 700;
     font-size: 16px;
     line-height: 16px;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFF;
     background-color: #46A358;
     cursor: pointer;
 }
@@ -101,12 +100,11 @@ body {
     width: 315px;
     text-align: center;
     position: relative;
-    margin: 0 0 27px 0;
+    margin: 0 0 27px;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     border-bottom: 1px solid #ccc;
-    line-height: 0;
 }
 
 .line-with-text p {
@@ -117,7 +115,7 @@ body {
 }
 
 .google_logo {
-    margin: 0 9px 0px 0;
+    margin: 0 9px;
 }
 
 .google__link {
@@ -126,7 +124,7 @@ body {
     border-radius: 5px;
     border-style: solid;
     border-color: #EAEAEA;
-    margin: 0 0 12px 0;
+    margin: 0 0 12px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -141,7 +139,7 @@ body {
 }
 
 .facebook__logo {
-    margin: 0 9px 0px 0;
+    margin: 0 9px 0 0;
 }
 
 .facebook__link {
@@ -153,7 +151,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    align-items: center;
     height: 40px;
     text-decoration: none;
     font-weight: 500;
