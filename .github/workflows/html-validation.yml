@@ -18,6 +18,6 @@ jobs:
           for file in $(find . -name "*.html"); do
             curl -H "Content-Type: text/html; charset=utf-8" \
                  --data-binary "@$file" \
-                 https://validator.w3.org/nu/?out=json \
+                 https://validator.w3.org/nu/ \
                  | jq '.messages[] | select(.type == "error")' || exit 1
           done
