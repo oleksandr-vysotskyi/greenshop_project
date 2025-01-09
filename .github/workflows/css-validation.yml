@@ -16,5 +16,5 @@ jobs:
       - name: Validate CSS
         run: |
           for file in $(find . -name "*.css"); do
-            curl -s -F "text=@$file" https://jigsaw.w3.org/css-validator/validator -F "output=json" | jq '.cssvalidation.warnings + .cssvalidation.errors' || exit 1
-          done
+             curl -s -F "text=@$file" https://jigsaw.w3.org/css-validator/validator -F "output=json" | jq '.cssvalidation.warnings + .cssvalidation.errors' || exit 1
+           done
