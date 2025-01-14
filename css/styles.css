@@ -228,7 +228,7 @@ header .login:hover svg {
     background-color: #F5F5F580;
 }
 
-article h3 {
+.banner h3 {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
