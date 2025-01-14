@@ -3,8 +3,8 @@ body {
     padding: 0;
     background: #FFF;
     font-family: 'Cera Pro', sans-serif;
+    box-sizing: border-box;
 }
-
 
 .container__form {
     max-width: 500px;
@@ -12,7 +12,7 @@ body {
 }
 
 .criss__cross-link {
-    display: block;
+    display: inline-block;
     margin: 13px 0 21px 487px;
 }
 
@@ -160,4 +160,114 @@ body {
 .container {
     max-width: 1200px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    margin-bottom: 12px;
+    padding-top: 30px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px
+}
+
+header nav ul a {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+header .login {
+    background: #46a358;
+    border-radius: 6px;
+    padding: 7px 17px;
+    display: flex;
+    align-items: center;
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4;
+
+}
+
+
+header .login svg {
+    margin-right: 4px;
+}
+
+
+header .login svg path {
+    transition: 0.4;
+}
+
+header .login:hover {
+    background-color: white;
+    color: #46a358;
+}
+
+header .login:hover svg {
+    stroke: #46a358;
+}
+
+.section .banner {
+    margin-bottom: 46px;
+}
+
+.banner .container {
+    padding-left: 40px;
+    background-color: #F5F5F580;
+}
+
+article h3 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 7px;
+    padding-top: 68px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 5px;
+    max-width: 700px;
+}
+
+h1 span {
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+    color: #46A358;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 44px;
+    max-width: 530px;
+}
+
+.shop-now {
+    display: inline-block;
+    background: #46A358;
+    text-decoration: none;
+    padding: 11px 27px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFF;
+    border-radius: 6px;
+    margin-bottom: 85px;
 }
