@@ -1,8 +1,21 @@
+@font-face {
+    font-family: 'fontspring_demo_-_cera_proRg';
+    src: url('../fonts/fontspring-demo-cerapro-regular-webfont.eot');
+    src: url('../fonts/fontspring-demo-cerapro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontspring-demo-cerapro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/fontspring-demo-cerapro-regular-webfont.woff') format('woff'),
+         url('../fonts/fontspring-demo-cerapro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/fontspring-demo-cerapro-regular-webfont.svg#fontspring_demo_-_cera_proRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     margin: 0;
     padding: 0;
     background: #FFF;
-    font-family: 'Cera Pro', sans-serif;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
     box-sizing: border-box;
 }
 
@@ -57,10 +70,7 @@ body {
     color: #3D3D3D;
 }
 
-.username,
-.email,
-.password,
-.confirm__password {
+.input {
     display: block;
     width: 300px;
     height: auto;
@@ -112,21 +122,19 @@ body {
     padding: 0 10px;
 }
 
-.google_logo {
-    margin: 0 9px;
+.logo {
+    margin: 0 9px 0 0;
 }
 
-.google__link {
+.link {
     width: 315px;
     border-width: 1px;
     border-radius: 5px;
     border-style: solid;
     border-color: #EAEAEA;
-    margin: 0 0 12px;
-    text-align: center;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 40px;
     text-decoration: none;
     font-weight: 500;
@@ -136,25 +144,8 @@ body {
     margin-bottom: 10px;
 }
 
-.facebook__logo {
-    margin: 0 9px 0 0;
-}
-
-.facebook__link {
-    width: 315px;
-    border-width: 1px;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: #EAEAEA;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 16px;
-    color: #727272;
+.link:last-of-type {
+    margin-bottom: 0;
 }
 
 .container {
@@ -191,7 +182,7 @@ header .login {
     padding: 7px 17px;
     display: flex;
     align-items: center;
-    font-family: "Cera Pro", sans-serif;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #fff;
