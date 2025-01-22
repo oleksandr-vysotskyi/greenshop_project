@@ -7,3 +7,5 @@ node_modules
 .stylelintrc.json
 .stylelintignore
 .husky
+test.html
+test.css
