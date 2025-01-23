@@ -136,10 +136,9 @@ body {
     align-items: center;
     justify-content: center;
     height: 40px;
-    text-decoration: none;
     font-weight: 500;
     font-size: 13px;
-    line-height: 16px;
+    line-height: 1rem;
     color: #727272;
     margin-bottom: 10px;
 }
@@ -179,7 +178,7 @@ header nav ul a {
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 header nav ul a:focus {
@@ -194,7 +193,7 @@ header .login {
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     color: #fff;
     transition: 0.4s;
 }
@@ -211,7 +210,7 @@ header .login svg path {
 
 header .login:hover {
     border-radius: 6px;
-    background-color: white;
+    background-color: yellow;
     color: #46a358;
 }
 
@@ -226,14 +225,16 @@ header .login:hover svg {
 
 .banner h3 {
     font-weight: 500;
+    text-transform: uppercase;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1rem;
     margin-bottom: 7px;
     padding-top: 68px;
 }
 
 h1 {
     font-weight: 900;
+    text-transform: uppercase;
     font-size: 70px;
     line-height: 70px;
     margin-bottom: 5px;
@@ -242,6 +243,7 @@ h1 {
 
 h1 span {
     font-weight: 900;
+    text-transform: uppercase;
     font-size: 70px;
     line-height: 70px;
     color: #46A358;
@@ -258,10 +260,10 @@ h1 span {
 .shop-now {
     display: inline-block;
     background: #46A358;
-    text-decoration: none;
+    text-transform: uppercase;
     padding: 11px 27px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 20px;
     color: #FFF;
     border-radius: 6px;
@@ -293,8 +295,8 @@ h1 span {
 
 .categories h3 {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 1rem;
+    line-height: 1rem;
     padding-bottom: 7px;
     color: #3D3D3D;
 }
@@ -336,7 +338,7 @@ h1 span {
 .sale p:last-of-type {
     font-weight: 700;
     font-size: 23px;
-    line-height: 16px;
+    line-height: 1rem;
     color: #3D3D3D;
     font-family: 'Cera Round Pro DEMO', sans-serif;
 }
@@ -369,21 +371,21 @@ h1 span {
 .filter__container label {
     font-weight: 400;
     font-size: 15px;
-    line-height: 16px;
+    line-height: 1rem;
     color: #3D3D3D;
 }
 
 .filter__container label select {
     font-weight: 400;
     font-size: 15px;
-    line-height: 16px;
+    line-height: 1rem;
     border: none;
 }
 
 .filter__container label select option {
     font-weight: 400;
     font-size: 15px;
-    line-height: 16px;
+    line-height: 1rem;
     text-align: center;
     color: #3D3D3D;
 }
@@ -405,8 +407,8 @@ h1 span {
 
 .cards__container p:first-of-type {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 1rem;
+    line-height: 1rem;
     color: #3D3D3D;
     margin-bottom: 6px;
 }
@@ -414,6 +416,6 @@ h1 span {
 .cards__container p:last-of-type {
     font-weight: 700;
     font-size: 18px;
-    line-height: 16px;
+    line-height: 1rem;
     color: #46A358;
 }
