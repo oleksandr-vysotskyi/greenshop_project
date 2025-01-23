@@ -276,15 +276,16 @@ h1 span {
 
 .products .container {
     display: flex;
-    align-items: start
+    align-items: stretch;
+    margin-bottom: 90px;
 }
 
 .categories__container {
     display: flex;
-    max-width: 310px;
+    max-width: 318px;
     flex-direction: column;
     background-color: #FBFBFB;
-    gap: 427px;
+    justify-content: space-between; /* Розподіляємо елементи зверху і знизу */
 }
 
 .categories {
@@ -393,9 +394,9 @@ h1 span {
 .cards__container {
     display: flex;
     max-width: 840px;
-    gap: 70px 33px;
+    gap: 70px 0;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 90px;
 }
 
 .cards__container img {
