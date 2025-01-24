@@ -1,0 +1,14 @@
+.flexbox {
+    background-color: silver;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flexbox div {
+    flex-basis: 300px;
+    /* height: 300px; */
+    margin: 10px;
+    background-color: red;
+}
