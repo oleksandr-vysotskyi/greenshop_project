@@ -635,6 +635,10 @@ h1 span {
     color: #3D3D3D;
 }
 
+article .blog-card img {
+    order:4;
+}
+
 .blog-card a:focus {
     transition: color 0.4s;
     color: #46A358;
