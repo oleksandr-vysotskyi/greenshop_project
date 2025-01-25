@@ -318,6 +318,12 @@ h1 span {
     margin-bottom: 85px;
 }
 
+.banner .shop-now:hover {
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+}
+
 .banner {
     margin-bottom: 48px;
 }
@@ -546,6 +552,12 @@ h1 span {
     line-height: 20px;
     gap: 5px;
     color: #fff;
+}
+
+.info a:hover{
+    border-radius: 6px;
+    background-color: black;
+    color: white;
 }
 
 .info a img {
