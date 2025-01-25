@@ -258,8 +258,8 @@ header .login svg path {
 
 header .login:hover {
     border-radius: 6px;
-    background-color: yellow;
-    color: #46a358;
+    background-color: black;
+    color: white;
 }
 
 header .login:hover svg {
