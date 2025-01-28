@@ -594,7 +594,7 @@ h1 span {
 }
 
 .icons.like-icon:hover {
-    stroke: #FF00;
+    stroke: #FF0000;
     cursor: pointer;
 }
 
