@@ -226,11 +226,13 @@ header nav ul a {
     display: flex;
     align-items: center;
     font-weight: 500;
+    border-bottom: 2px solid transparent;
     font-size: 1rem;
 }
 
 header nav ul a:focus {
     font-weight: 700;
+    border-bottom: 2px solid #46a358;
     transition: color 0.4s;
 }
 
@@ -265,6 +267,13 @@ header .login:hover {
 header .login:hover svg {
     stroke: #46a358;
 }
+
+/* header{
+    position: fixed;
+    width: 100%;
+    background-color: #fbfbfb;
+    z-index: 3;
+} */
 
 .banner .container {
     padding-left: 40px;
@@ -335,7 +344,6 @@ h1 span {
 .products .container {
     display: flex;
     align-items: stretch;
-    margin-bottom: 90px;
 }
 
 .categories__container {
@@ -368,9 +376,12 @@ h1 span {
     line-height: 40px;
 }
 
-.products ul li>a:focus {
+.products .categories__list a:hover {
     transition: color 0.4s;
-    color: #46A358;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 267%;
+    color: #46a358;
 }
 
 
@@ -414,7 +425,6 @@ h1 span {
 }
 
 .sale img {
-    align-self: center;
     width: 310px;
 }
 
@@ -436,6 +446,23 @@ h1 span {
 .filter__container ul {
     display: flex;
     gap: 40px;
+}
+
+.filter__container ul li a {
+    border-bottom: 2px solid transparent;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+}
+
+.filter__container ul li>a:hover {
+    transition: color 0.4s;
+    border-bottom: 2px solid #46a358;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 107%;
+    color: #46A358;
 }
 
 .filter__container label {
@@ -468,7 +495,7 @@ h1 span {
 .cards__container {
     display: flex;
     max-width: 840px;
-    gap: 70px 0;
+    gap: 33px 0;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -493,6 +520,98 @@ h1 span {
     font-size: 18px;
     line-height: 1rem;
     color: #46A358;
+    display: flex;
+    gap: 16px;
+}
+
+.cards__container article {
+    border-top: 1px solid transparent;
+}
+
+.cards__container article {
+    position: relative;
+}
+
+.cards__container p+span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    padding: 7px 9px;
+    background-color: #46A358;
+    color: #fff;
+    position: absolute;
+    top: 14px;
+}
+
+.cards__container p>span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 89%;
+    text-decoration: line-through;
+    color: #a5a5a5;
+}
+
+.cards__container .action {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action .icons {
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0;
+    padding: 7px 6px;
+    position: relative;
+    top: -95px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: all 0.5s ease;
+}
+
+.cards__container article:hover .action .icons {
+    opacity: 1;
+}
+
+.icons.cart-icon {
+    stroke: #E5E5E5;
+}
+
+
+.icons.like-icon {
+    stroke: #3D3D3D;
+}
+
+
+.icons.search-icon {
+    stroke: #E5E5E5;
+}
+
+
+
+.icons.cart-icon:hover {
+    transition: 0.5s;
+    stroke: #46A358;
+    cursor: pointer;
+}
+
+.icons.like-icon:hover {
+    stroke: #FF0000;
+    cursor: pointer;
+}
+
+.icons.search-icon:hover {
+    stroke: #46A358;
+    cursor: pointer;
+}
+
+.cards__container article:hover .action .icons {
+    display: block;
+}
+
+.cards__container article:hover {
+    border-top: 1px solid #46A358;
 }
 
 .info-cards {
@@ -518,8 +637,10 @@ h1 span {
 }
 
 .info-cards article>img {
-    width: 292px;
-    height: 292px;
+    width: 287px;
+    height: 287px;
+    position: relative;
+    top: -36px;
 }
 
 .info h3 {
@@ -554,7 +675,7 @@ h1 span {
     color: #fff;
 }
 
-.info a:hover{
+.info a:hover {
     border-radius: 6px;
     background-color: black;
     color: white;
@@ -605,10 +726,6 @@ h1 span {
 }
 
 .blog-card {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
     padding-left: 10px;
 }
 
@@ -661,4 +778,55 @@ article .blog-card img {
 .blog-card a:focus {
     transition: color 0.4s;
     color: #46A358;
+}
+
+.pagination__container {
+    padding-top: 57px;
+    display: flex;
+    justify-content: end;
+
+}
+
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination a {
+    padding: 10px 14px;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid #e5e5e5;
+    color: #3d3d3d;
+}
+
+.pagination li svg {
+    border: 1px solid #E5E5E5;
+    padding: 10px 14px;
+    border-radius: 4px;
+    border-radius: 4px;
+}
+
+.pagination li svg path {
+    transition: stroke 0.3s ease;
+}
+
+.pagination li svg:hover path,
+li {
+    stroke: #46A358;
+    cursor: pointer;
+}
+
+
+.pagination a:hover {
+    transition: color 0.4s;
+    border-bottom: 2px solid #46a358;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #fff;
+    background: #46a358;
 }
