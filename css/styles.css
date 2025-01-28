@@ -526,9 +526,6 @@ h1 span {
 
 .cards__container article {
     border-top: 1px solid transparent;
-}
-
-.cards__container article {
     position: relative;
 }
 
@@ -597,17 +594,13 @@ h1 span {
 }
 
 .icons.like-icon:hover {
-    stroke: #FF0000;
+    stroke: #FF00;
     cursor: pointer;
 }
 
 .icons.search-icon:hover {
     stroke: #46A358;
     cursor: pointer;
-}
-
-.cards__container article:hover .action .icons {
-    display: block;
 }
 
 .cards__container article:hover {
@@ -806,7 +799,6 @@ article .blog-card img {
 .pagination li svg {
     border: 1px solid #E5E5E5;
     padding: 10px 14px;
-    border-radius: 4px;
     border-radius: 4px;
 }
 
