@@ -230,7 +230,7 @@ header nav ul a {
     font-size: 1rem;
 }
 
-header nav ul a:focus {
+header nav ul a:hover {
     font-weight: 700;
     border-bottom: 2px solid #46a358;
     transition: color 0.4s;
@@ -267,13 +267,6 @@ header .login:hover {
 header .login:hover svg {
     stroke: #46a358;
 }
-
-/* header{
-    position: fixed;
-    width: 100%;
-    background-color: #fbfbfb;
-    z-index: 3;
-} */
 
 .banner .container {
     padding-left: 40px;
