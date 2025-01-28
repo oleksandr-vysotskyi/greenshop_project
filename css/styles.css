@@ -585,8 +585,6 @@ h1 span {
     stroke: #E5E5E5;
 }
 
-
-
 .icons.cart-icon:hover {
     transition: 0.5s;
     stroke: #46A358;
@@ -796,7 +794,7 @@ article .blog-card img {
     color: #3d3d3d;
 }
 
-.pagination li svg {
+.pagination li svg{
     border: 1px solid #E5E5E5;
     display: inherit;
     padding: 9px 14px;
@@ -814,7 +812,7 @@ article .blog-card img {
 }
 
 .pagination li svg:hover path {
-    stroke: #FFFFFF;
+    stroke: #FFF;
     cursor: pointer;
 }
 
