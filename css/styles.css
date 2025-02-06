@@ -1213,7 +1213,6 @@ footer .social-media li>a {
 
 footer .social-media ul>li:hover {
     scale: 1.2;
-    transition: 0.4s;
     background-color: #FFF;
 }
 
