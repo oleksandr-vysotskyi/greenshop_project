@@ -9,6 +9,7 @@
         <link
             href="https://fonts.cdnfonts.com/css/cera-round-pro-demo?styles=152405,152404,152403,152402"
             rel="stylesheet">
+        <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/styles.css">
@@ -18,58 +19,60 @@
     <body>
         <header>
             <div class="container">
-                <a href="/index.html" target="_self" title="Greenshop">
-                    <img src="./img/greenzone_logo.svg" alt="logo">
+                <a href="/index.html" class="logo" title="Greenshop">
+                    <svg class="greenshop-icon" width="150" height="35"
+                        role="img" aria-label="Greenshop">
+                        <use href="./img/icons.svg#greenshop"></use>
+                    </svg>
                 </a>
                 <nav>
                     <ul>
                         <li>
-                            <a href="#" title="Home" target="_self">
+                            <a href="#" title="Home">
                                 Home
                             </a>
                         </li>
                         <li>
-                            <a href="#" title="Shop" target="_self">
+                            <a href="#" title="Shop">
                                 Shop
                             </a>
                         </li>
                         <li class="drop">
-                            <a href="#" title="Plant Care" target="_self">
+                            <a href="#" title="Plant Care">
                                 Plant Care
                             </a>
                             <ul class="dropdown">
                                 <li>
-                                    <a href="#" title="Drainage" target="_self">
+                                    <a href="#" title="Drainage">
                                         Drainage
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="Fungicides"
-                                        target="_self">
+                                    <a href="#" title="Fungicides">
                                         Fungicides
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="Fertilizer"
-                                        target="_self">
+                                    <a href="#" title="Fertilizer">
                                         Fertilizer
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="Priming" target="_self">
+                                    <a href="#" title="Priming">
                                         Priming
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#" target="_self" title="Blogs">
+                            <a href="#" title="Blogs">
                                 Blogs
                             </a>
                         </li>
                     </ul>
                 </nav>
-                <a href="#" class="login" target="_self" title="Login">
+                <a href="./registration.html" class="login"
+                    title="Login">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.1601 10.1006H8.12598" stroke="white"
@@ -104,8 +107,7 @@
                             Use our plants to
                             create an unique Urban Jungle. Order your favorite
                             plants!</p>
-                        <a class="shop-now" href="#" title="Shop Now"
-                            target="_self">
+                        <a class="shop-now" href="#" title="Shop Now">
                             Shop Now
                         </a>
                     </article>
@@ -119,48 +121,83 @@
                             <h3>Categories</h3>
                             <ul class="categories__list">
                                 <li>
-                                    <a href="#" target="_self" title="House Plants">
+                                    <a href="#"
+                                        title="House Plants">
                                         House Plants
+                                        <span>
+                                            (33)
+                                        </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_self" title="Potter Plants">
+                                    <a href="#"
+                                        title="Potter Plants">
                                         Potter Plants
+                                        <span>
+                                            (12)
+                                        </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_self" title="Seeds">
+                                    <a href="#" title="Seeds">
                                         Seeds
+                                        <span>
+                                            (65)
+                                        </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_self" title="Small Plants">
+                                    <a href="#"
+                                        title="Small Plants">
                                         Small Plants
+                                        <span>
+                                            (39)
+                                        </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_self" title="Big Plants">
+                                    <a href="#"
+                                        title="Big Plants">
                                         Big Plants
+                                        <span>
+                                            (23)
+                                        </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_self" title="Succulents">
+                                    <a href="#"
+                                        title="Succulents">
                                         Succulents
+                                        <span>
+                                            (17)
+                                        </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_self" title="Terrariums">
+                                    <a href="#"
+                                        title="Terrariums">
                                         Terrariums
+                                        <span>
+                                            (19)
+                                        </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_self" title="Gardening">
+                                    <a href="#"
+                                        title="Gardening">
                                         Gardening
+                                        <span>
+                                            (13)
+                                        </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_self" title="Accessories">
+                                    <a href="#"
+                                        title="Accessories">
                                         Accessories
+                                        <span>
+                                            (18)
+                                        </span>
                                     </a>
                                 </li>
                             </ul>
@@ -176,17 +213,19 @@
                         <div class="filter__container">
                             <ul>
                                 <li>
-                                    <a href="#" target="_self" title="All Plants">
+                                    <a href="#"
+                                        title="All Plants">
                                         All Plants
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_self" title="New Arrivals">
+                                    <a href="#"
+                                        title="New Arrivals">
                                         New Arrivals
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_self" title="Sale">
+                                    <a href="#" title="Sale">
                                         Sale
                                     </a>
                                 </li>
@@ -373,8 +412,7 @@
                                 <ul class="action">
                                     <li>
                                         <svg class="icons cart-icon" width="20"
-                                            height="20" viewBox="0 0 20 20"
-                                            fill="none"
+                                            height="20"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M14.294 16.8745H8.24077C5.65655 16.8745 3.55412 14.7721 3.55412 12.1879V7.38405C3.55412 4.98175 2.35676 2.75813 0.351225 1.4358C-0.00894369 1.19834 -0.108379 0.713895 0.129078 0.353726C0.366535 -0.00648163 0.850939 -0.105956 1.21119 0.131579C2.35606 0.886442 3.28487 1.88204 3.94905 3.02832C4.09258 3.18911 5.24995 4.41584 7.14726 4.41584H16.142C18.596 4.36995 20.5168 6.83267 19.8752 9.20138L18.8397 13.3284C18.3159 15.4163 16.4466 16.8745 14.294 16.8745ZM4.91926 5.53677C5.04912 6.1367 5.11634 6.7553 5.11634 7.38405V12.1879C5.11634 13.9107 6.51796 15.3123 8.24077 15.3123H14.294C15.7291 15.3123 16.9752 14.3401 17.3245 12.9482L18.3599 8.82121C18.7412 7.41373 17.5997 5.95084 16.142 5.97806H7.14722C6.28913 5.97806 5.54224 5.79305 4.91926 5.53677ZM7.85021 19.0226C7.85021 18.4833 7.41307 18.0462 6.87383 18.0462C5.57828 18.0978 5.57942 19.9479 6.87383 19.999C7.41307 19.999 7.85021 19.5618 7.85021 19.0226ZM15.6222 19.0226C15.6222 18.4833 15.1851 18.0462 14.6459 18.0462C13.3503 18.0978 13.3514 19.9479 14.6459 19.999C15.1851 19.999 15.6222 19.5618 15.6222 19.0226ZM16.9231 8.32138C16.9231 7.88998 16.5734 7.54027 16.142 7.54027H7.45966C6.42329 7.58152 6.42407 9.0616 7.45966 9.10249H16.142C16.5734 9.10249 16.9231 8.75279 16.9231 8.32138Z"
@@ -384,7 +422,6 @@
                                     <li>
                                         <svg class="icons like-icon" width="20"
                                             height="18"
-                                            viewBox="0 0 20 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M10 17.8873C9.71527 17.8873 9.44077 17.7842 9.22684 17.5968C8.41888 16.8903 7.63992 16.2264 6.95267 15.6408L6.94916 15.6377C4.93423 13.9207 3.19427 12.4378 1.98364 10.9771C0.630341 9.34409 0 7.79578 0 6.10434C0 4.46097 0.563507 2.94485 1.58661 1.83508C2.62192 0.712189 4.04251 0.09375 5.58716 0.09375C6.74164 0.09375 7.79892 0.45874 8.72955 1.1785C9.19922 1.54181 9.62494 1.98645 10 2.5051C10.3752 1.98645 10.8008 1.54181 11.2706 1.1785C12.2012 0.45874 13.2585 0.09375 14.413 0.09375C15.9575 0.09375 17.3782 0.712189 18.4135 1.83508C19.4366 2.94485 20 4.46097 20 6.10434C20 7.79578 19.3698 9.34409 18.0165 10.9769C16.8059 12.4378 15.0661 13.9205 13.0515 15.6374C12.363 16.224 11.5828 16.8889 10.773 17.5971C10.5592 17.7842 10.2846 17.8873 10 17.8873ZM5.58716 1.26532C4.37363 1.26532 3.25882 1.74963 2.44781 2.62915C1.62476 3.52194 1.17142 4.75607 1.17142 6.10434C1.17142 7.52692 1.70013 8.79919 2.88559 10.2296C4.03137 11.6122 5.73563 13.0645 7.70889 14.7462L7.71255 14.7492C8.4024 15.3371 9.18442 16.0036 9.99832 16.7153C10.8171 16.0023 11.6003 15.3347 12.2916 14.7458C14.2647 13.0642 15.9688 11.6122 17.1146 10.2296C18.2999 8.79919 18.8286 7.52692 18.8286 6.10434C18.8286 4.75607 18.3752 3.52194 17.5522 2.62915C16.7413 1.74963 15.6264 1.26532 14.413 1.26532C13.524 1.26532 12.7078 1.54791 11.9872 2.10516C11.3449 2.60199 10.8975 3.23004 10.6352 3.66949C10.5003 3.89548 10.2629 4.03036 10 4.03036C9.73709 4.03036 9.49966 3.89548 9.36478 3.66949C9.10263 3.23004 8.65524 2.60199 8.01285 2.10516C7.29218 1.54791 6.47598 1.26532 5.58716 1.26532Z"
@@ -394,7 +431,6 @@
                                     <li>
                                         <svg class="icons search-icon"
                                             width="20" height="20"
-                                            viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M14.5656 16.0023C10.5704 19.1859 4.98549 18.3049 2.02729 14.6536C-0.827886 11.1285 -0.64932 6.04314 2.44811 2.82458C5.64856 -0.50074 10.6802 -0.944658 14.3277 1.78316C15.6345 2.76027 16.6104 4.00337 17.246 5.50807C17.8853 7.02151 18.0795 8.59614 17.8578 10.2201C17.6368 11.8365 16.9918 13.2769 15.9423 14.6212C16.0272 14.6767 16.1178 14.7167 16.1827 14.7816C17.3365 15.9305 18.4859 17.0836 19.6397 18.2325C19.9132 18.5047 20.0493 18.8218 19.9682 19.204C19.8071 19.9644 18.9018 20.2579 18.3211 19.7359C18.0489 19.4918 17.7985 19.2227 17.54 18.9642C16.5923 18.0171 15.6451 17.0693 14.6973 16.1221C14.658 16.0847 14.6168 16.0497 14.5656 16.0023ZM15.9529 8.98636C15.9629 5.12659 12.8468 2.00605 8.97825 2.00043C5.12035 1.99481 2.00669 5.09037 1.98983 8.94765C1.97297 12.8168 5.08289 15.9461 8.96326 15.9642C12.8055 15.9823 15.9429 12.8499 15.9529 8.98636Z"
@@ -412,8 +448,7 @@
                                 <ul class="action">
                                     <li>
                                         <svg class="icons cart-icon" width="20"
-                                            height="20" viewBox="0 0 20 20"
-                                            fill="none"
+                                            height="20"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M14.294 16.8745H8.24077C5.65655 16.8745 3.55412 14.7721 3.55412 12.1879V7.38405C3.55412 4.98175 2.35676 2.75813 0.351225 1.4358C-0.00894369 1.19834 -0.108379 0.713895 0.129078 0.353726C0.366535 -0.00648163 0.850939 -0.105956 1.21119 0.131579C2.35606 0.886442 3.28487 1.88204 3.94905 3.02832C4.09258 3.18911 5.24995 4.41584 7.14726 4.41584H16.142C18.596 4.36995 20.5168 6.83267 19.8752 9.20138L18.8397 13.3284C18.3159 15.4163 16.4466 16.8745 14.294 16.8745ZM4.91926 5.53677C5.04912 6.1367 5.11634 6.7553 5.11634 7.38405V12.1879C5.11634 13.9107 6.51796 15.3123 8.24077 15.3123H14.294C15.7291 15.3123 16.9752 14.3401 17.3245 12.9482L18.3599 8.82121C18.7412 7.41373 17.5997 5.95084 16.142 5.97806H7.14722C6.28913 5.97806 5.54224 5.79305 4.91926 5.53677ZM7.85021 19.0226C7.85021 18.4833 7.41307 18.0462 6.87383 18.0462C5.57828 18.0978 5.57942 19.9479 6.87383 19.999C7.41307 19.999 7.85021 19.5618 7.85021 19.0226ZM15.6222 19.0226C15.6222 18.4833 15.1851 18.0462 14.6459 18.0462C13.3503 18.0978 13.3514 19.9479 14.6459 19.999C15.1851 19.999 15.6222 19.5618 15.6222 19.0226ZM16.9231 8.32138C16.9231 7.88998 16.5734 7.54027 16.142 7.54027H7.45966C6.42329 7.58152 6.42407 9.0616 7.45966 9.10249H16.142C16.5734 9.10249 16.9231 8.75279 16.9231 8.32138Z"
@@ -564,22 +599,22 @@
                     <div class="pagination__container">
                         <ul class="pagination">
                             <li>
-                                <a href="#" target="_self" title="1">
+                                <a href="#" title="1">
                                     1
                                 </a>
                             </li>
                             <li>
-                                <a href="#" target="_self" title="2">
+                                <a href="#" title="2">
                                     2
                                 </a>
                             </li>
                             <li>
-                                <a href="#" target="_self" title="3">
+                                <a href="#" title="3">
                                     3
                                 </a>
                             </li>
                             <li>
-                                <a href="#" target="_self" title="4">
+                                <a href="#" title="4">
                                     4
                                 </a>
                             </li>
@@ -601,7 +636,13 @@
                                 </h3>
                                 <p>We are an online plant shop offering a wide
                                     range of cheap and trendy plants</p>
-                                <a href="#" target="_self" title=" Find More">
+                                <a href="#" title="Find More">
+                                    <svg class="arrow-info" width="16"
+                                        role="img" aria-label="arrow icon"
+                                        height="16">
+                                        <use
+                                            href="./img/icons.svg#arrow-info"></use>
+                                    </svg>
                                     Find More
                                 </a>
                             </div>
@@ -616,7 +657,13 @@
                                 <p>We are an online plant shop offering a wide
                                     range
                                     of cheap and trendy plants</p>
-                                <a href="#" target="_self" title=" Find More">
+                                <a href="#" title="Find More">
+                                    <svg class="arrow-info" width="16"
+                                        role="img" aria-label="arrow icon"
+                                        height="16">
+                                        <use
+                                            href="./img/icons.svg#arrow-info"></use>
+                                    </svg>
                                     Find More
                                 </a>
                             </div>
@@ -643,7 +690,13 @@
                                     Care Tips</h5>
                                 <p>Cacti are succulents are easy care plants for
                                     any home or patio. </p>
-                                <a href="#" target="_self" title="Read More">
+                                <a href="#" title="Read More">
+                                    <svg class="arrow-blogs" width="16"
+                                        role="img" aria-label="arrow icon"
+                                        height="16">
+                                        <use
+                                            href="./img/icons.svg#arrow-blogs"></use>
+                                    </svg>
                                     Read More
                                 </a>
                             </div>
@@ -658,7 +711,13 @@
                                     Your Home</h5>
                                 <p>Best in hanging baskets. Prefers medium to
                                     high light.</p>
-                                <a href="#" target="_self" title="Read More">
+                                <a href="#" title="Read More">
+                                    <svg class="arrow-blogs" width="16"
+                                        role="img" aria-label="arrow icon"
+                                        height="16">
+                                        <use
+                                            href="./img/icons.svg#arrow-blogs"></use>
+                                    </svg>
                                     Read More
                                 </a>
                             </div>
@@ -673,7 +732,13 @@
                                     Care Tips</h5>
                                 <p>Cacti and succulents thrive in containers and
                                     because most are..</p>
-                                <a href="#" target="_self" title="Read More">
+                                <a href="#" title="Read More">
+                                    <svg class="arrow-blogs" width="16"
+                                        role="img" aria-label="arrow icon"
+                                        height="16">
+                                        <use
+                                            href="./img/icons.svg#arrow-blogs"></use>
+                                    </svg>
                                     Read More
                                 </a>
                             </div>
@@ -688,7 +753,13 @@
                                     Room by Room</h5>
                                 <p>The benefits of houseplants are endless. In
                                     addition to..</p>
-                                <a href="#" target="_self" title="Read More">
+                                <a href="#" title="Read More">
+                                    <svg class="arrow-blogs" width="16"
+                                        role="img" aria-label="arrow icon"
+                                        height="16">
+                                        <use
+                                            href="./img/icons.svg#arrow-blogs"></use>
+                                    </svg>
                                     Read More
                                 </a>
                             </div>
@@ -700,8 +771,11 @@
                 <div class="container">
                     <div class="garden-tips">
                         <article>
-                            <img loading="lazy" src="./img/garden_care.svg"
-                                alt="garden care">
+                            <svg class="garden" width="90" height="90"
+                                role="img" aria-label="Garden care">
+                                <use
+                                    href="../img/pictures.svg#garden-care"></use>
+                            </svg>
                             <h4>
                                 Garden Care
                             </h4>
@@ -713,8 +787,11 @@
                             </p>
                         </article>
                         <article>
-                            <img loading="lazy" src="./img/plant_renovation.svg"
-                                alt="plant renovation">
+                            <svg class="plant" width="90" height="90"
+                                role="img" aria-label="Plant Renovation">
+                                <use
+                                    href="../img/pictures.svg#plant-renovation"></use>
+                            </svg>
                             <h4>
                                 Plant Renovation
                             </h4>
@@ -725,8 +802,11 @@
                             </p>
                         </article>
                         <article>
-                            <img loading="lazy" src="./img/water_garden.svg"
-                                alt="watering garden">
+                            <svg class="garden" width="90" height="90"
+                                role="img" aria-label="Watering garden">
+                                <use
+                                    href="./img/pictures.svg#watering-garden"></use>
+                            </svg>
                             <h4>
                                 Watering Garden
                             </h4>
@@ -738,8 +818,7 @@
                         </article>
                         <article>
                             <p>Would you like to join newsletters?</p>
-                            <form action="https://fom.in.ua/echo" method="post"
-                                target="_self">
+                            <form action="https://fom.in.ua/echo" method="post">
                                 <input type="email"
                                     placeholder="enter your email address..."
                                     name="email">
@@ -759,20 +838,31 @@
                         </article>
                     </div>
                     <div class="contact-information">
-                        <a href="/index.html" target="_self" title="Greenshop">
-                            <img src="./img/greenzone_logo.svg"
-                                alt="logo">
+                        <a href="/index.html" title="Greenshop">
+                            <svg class="greenshop-icon" width="150" height="35"
+                                role="img" aria-label="Greenshop">
+                                <use href="./img/icons.svg#greenshop"></use>
+                            </svg>
                         </a>
                         <p class="address">
                             70 West Buckingham Ave.
                             Farmingdale, NY 11735
+                            <svg class="location-icon" width="30" height="30">
+                                <use href="./img/icons.svg#location"></use>
+                            </svg>
                         </p>
                         <a class="email" href="mailto:contact@greenshop.com"
                             title="Email">
                             contact@greenshop.com
+                            <svg class="email-icon" width="20" height="20">
+                                <use href="./img/icons.svg#email"></use>
+                            </svg>
                         </a>
                         <a class="phone" href="tel:8801911717490" title="Phone">
                             +88&nbsp;01911&nbsp;717&nbsp;490
+                            <svg class="phone-icon" width="20" height="20">
+                                <use href="./img/icons.svg#phone"></use>
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -785,30 +875,27 @@
                         </h4>
                         <ul>
                             <li>
-                                <a href="#" title="My Account"
-                                    target="_self">
+                                <a href="#" title="My Account">
                                     My Account
                                 </a>
                             </li>
                             <li>
-                                <a href="#" title="Our stores"
-                                    target="_self">
+                                <a href="#" title="Our stores">
                                     Our stores
                                 </a>
                             </li>
                             <li>
-                                <a href="#" title="Contact us"
-                                    target="_self">
+                                <a href="#" title="Contact us">
                                     Contact us
                                 </a>
                             </li>
                             <li>
-                                <a href="#" title="Career" target="_self">
+                                <a href="#" title="Career">
                                     Career
                                 </a>
                             </li>
                             <li>
-                                <a href="#" title="Specials" target="_self">
+                                <a href="#" title="Specials">
                                     Specials
                                 </a>
                             </li>
@@ -820,32 +907,27 @@
                         </h4>
                         <ul>
                             <li>
-                                <a href="#" title="Help Center"
-                                    target="_self">
+                                <a href="#" title="Help Center">
                                     Help Center
                                 </a>
                             </li>
                             <li>
-                                <a href="#" title="How to Buy"
-                                    target="_self">
+                                <a href="#" title="How to Buy">
                                     How to Buy
                                 </a>
                             </li>
                             <li>
-                                <a href="#" title="Shipping & Delivery"
-                                    target="_self">
+                                <a href="#" title="Shipping & Delivery">
                                     Shipping &amp; Delivery
                                 </a>
                             </li>
                             <li>
-                                <a href="#" title="Product Policy"
-                                    target="_self">
+                                <a href="#" title="Product Policy">
                                     Product Policy
                                 </a>
                             </li>
                             <li>
-                                <a href="#" title="How to Return"
-                                    target="_self">
+                                <a href="#" title="How to Return">
                                     How to Return
                                 </a>
                             </li>
@@ -857,32 +939,27 @@
                         </h4>
                         <ul>
                             <li>
-                                <a href="#" title="House Plants"
-                                    target="_self">
+                                <a href="#" title="House Plants">
                                     House Plants
                                 </a>
                             </li>
                             <li>
-                                <a href="#" title="Potter Plants"
-                                    target="_self">
+                                <a href="#" title="Potter Plants">
                                     Potter Plants
                                 </a>
                             </li>
                             <li>
-                                <a href="#" title="Seeds"
-                                    target="_self">
+                                <a href="#" title="Seeds">
                                     Seeds
                                 </a>
                             </li>
                             <li>
-                                <a href="#" title="Small Plants"
-                                    target="_self">
+                                <a href="#" title="Small Plants">
                                     Small Plants
                                 </a>
                             </li>
                             <li>
-                                <a href="#" title="Accessories"
-                                    target="_self">
+                                <a href="#" title="Accessories">
                                     Accessories
                                 </a>
                             </li>
@@ -896,39 +973,51 @@
                             <li>
                                 <a href="https://www.facebook.com/"
                                     title="Facebook" target="_blank">
-                                    <img
-                                        src="./img/facebook_icon.svg"
-                                        alt="facebook_logo">
+                                    <svg class="icon" width="8" height="16"
+                                        role="img" aria-label="Facebook">
+                                        <use
+                                            href="../img/icons.svg#facebook_icon"></use>
+                                    </svg>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/"
                                     title="Instagram" target="_blank">
-                                    <img
-                                        src="./img/instagram_icon.svg"
-                                        alt="instagram_logo">
+                                    <svg class="icon" width="16" height="16"
+                                        role="img" aria-label="Instagram">
+                                        <use
+                                            href="../img/icons.svg#instagram_icon"></use>
+                                    </svg>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.twitter.com/"
                                     title="Twitter" target="_blank">
-                                    <img src="./img/twitter_icon.svg"
-                                        alt="twitter_logo">
+                                    <svg class="icon" width="16" height="13"
+                                        role="img" aria-label="Twitter">
+                                        <use
+                                            href="../img/icons.svg#twitter_icon"></use>
+                                    </svg>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/"
-                                    title="LinkedIn" target="_blank">
-                                    <img
-                                        src="./img/linkedin_icon.svg"
-                                        alt="linkedin_logo">
+                                    title="LinkedIn" target="_blank" role="img"
+                                    aria-label="LinkedIn">
+                                    <svg class="icon" width="16" height="15">
+                                        <use
+                                            href="../img/icons.svg#linkedin_icon"></use>
+                                    </svg>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.youtube.com/"
                                     title="Youtube" target="_blank">
-                                    <img src="./img/youtube_icon.svg"
-                                        alt="youtube_logo">
+                                    <svg class="icon" width="19" height="14"
+                                        role="img" aria-label="YouTube">
+                                        <use
+                                            href="../img/icons.svg#youtube_icon"></use>
+                                    </svg>
                                 </a>
                             </li>
                         </ul>
