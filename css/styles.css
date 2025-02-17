@@ -338,6 +338,7 @@ header nav ul li .dropdown li .priming {
 header nav ul li .dropdown li:hover .priming svg {
     stroke: #fff;
     transform: rotate(180deg);
+    transition: 0.5s ease-out;
     stroke-width: 1.2;
 }
 
@@ -925,6 +926,7 @@ h1 span {
 
 .pagination li {
     border-radius: 4px;
+    border: 1px solid #e5e5e5;
 }
 
 .pagination li>a {
@@ -936,34 +938,29 @@ h1 span {
     font-size: 18px;
     line-height: 89%;
     color: #3d3d3d;
-    min-width: 33px;
-    min-height: 33px;
+    min-width: 36px;
+    min-height: 36px;
 }
 
-.pagination li:not(:last-of-type) {
-    border: 1px solid #e5e5e5;
-}
-
-.pagination li:last-of-type {
-    min-width: 35px;
-    min-height: 35px;
-    background-image: url('../img/pagination_arrow.svg');
-}
-
-.pagination li:last-of-type:hover {
-    transition: 0.3s;
-    cursor: pointer;
-    background-color: #46A358;
-    background-image: url('../img/pagination_arrow_hover.svg');
-}
-
-.pagination li:hover,
 .pagination li:hover a {
-    background-color: #46a358;
-    font-weight: 700;
-    cursor: pointer;
     color: #fff;
+    font-weight: 700;
 }
+
+.pagination li a svg {
+    stroke: #fff;
+}
+
+.pagination li:hover {
+    background-color: #46a358;
+    cursor: pointer;
+    stroke: #fff;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+
 
 .garden-care .container:first-of-type {
     background-color: #FBFBFB;
