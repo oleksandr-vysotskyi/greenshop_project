@@ -494,9 +494,9 @@ h1 span {
     align-items: center;
     background-image:
         linear-gradient(to bottom, #46A3581A, #46A35808),
-        url('../img/circle-large.png'),
-        url('../img/circle-medium.png'),
-        url('../img/circle-small.png');
+        url('../img/circle-large.svg'),
+        url('../img/circle-medium.svg'),
+        url('../img/circle-small.svg');
     background-size:
         cover,
         15px,
