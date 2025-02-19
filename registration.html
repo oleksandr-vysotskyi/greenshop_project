@@ -1,63 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Cera+Pro:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Registration form</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cera+Pro:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Registration form</title>
+    </head>
 
-<body>
-    <div class="container__form">
-        <div class="criss__cross-box">
-            <a class="criss__cross-link" href="#">
-                <img src="./img/criss_cross.svg" alt="Close registration form">
-            </a>
-        </div>
-        <div class="title__box">
-            <h3 class="title__box-login">
-                Login
-            </h3>
-            <hr class="line">
-            <h3 class="title__box-register">
-                Register
-            </h3>
-        </div>
-        <p class="form__title">Enter your email and password to register.</p>
-        <div class="form__box">
-            <form class="form" action="https://fom.in.ua/echo" method="post" target="_self">
-                <input class="input" type="text" name="username" id="username" placeholder="Username" required>
-                <input class="input" type="email" name="email" id="email" placeholder="Enter your email address"
+    <body>
+        <div class="container__form">
+            <div class="criss__cross-box">
+                <a class="criss__cross-link" href="./index.html">
+                    <svg class="facebook_logo" width="18" height="18" role="img"
+                        aria-label="Cross icon">
+                        <use href="./img/icons.svg#criss_cross"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="title__box">
+                <h3 class="title__box-login">
+                    Login
+                </h3>
+                <h3 class="title__box-register">
+                    Register
+                </h3>
+            </div>
+
+            <form class="form" action="https://fom.in.ua/echo" method="post"
+                target="_self">
+                <p class="form__title">Enter your email and password to
+                    register.</p>
+                <input class="input" type="text" name="username"
+                    id="username" placeholder="Username" required>
+                <input class="input" type="email" name="email" id="email"
+                    placeholder="Enter your email address"
                     required>
-                <input class="input" type="password" name="password" id="password" placeholder="Password" required>
-                <input class="input" type="password" name="confirm_password" id="confirm_password"
+                <input class="input" type="password" name="password"
+                    id="password" placeholder="Password" required>
+                <input class="input" type="password" name="confirm_password"
+                    id="confirm_password"
                     placeholder="Confirm Password" required>
                 <button class="button" type="submit">
                     Register
                 </button>
             </form>
-        </div>
-        <div class="register__with-box">
-            <div class="line-with-text">
-                <p>
-                    Or register with
-                </p>
+            <div class="register__with-box">
+                <div class="line-with-text">
+                    <p>
+                        Or register with
+                    </p>
+                </div>
+                <a class="link" href="#">
+                    <svg class="google_logo" width="20" height="20" role="img"
+                        aria-label="Google logo">
+                        <use href="./img/icons.svg#google_logo"></use>
+                    </svg>
+                    Continue with Google
+                </a>
+                <a class="link" href="#">
+                    <svg class="facebook_logo" width="20" height="20" role="img"
+                        aria-label="Google logo">
+                        <use href="./img/icons.svg#facebook_logo"></use>
+                    </svg>
+                    Continue with Facebook
+                </a>
             </div>
-            <a class="link" href="#">
-                <img class="logo" src="./img/google_logo.svg" alt="logo">
-                Continue with Google
-
-            </a>
-            <a class="link" href="#">
-                <img class="logo" src="./img/facebook_logo.svg" alt="logo">
-                Continue with Facebook
-            </a>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>

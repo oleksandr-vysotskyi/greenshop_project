@@ -19,7 +19,6 @@
         url('fontspring-demo-cerapro-bold-webfont.svg#fontspring_demo_-_cera_proBd') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -67,69 +66,86 @@ body {
 }
 
 .container__form {
+    display: flex;
     max-width: 500px;
+    flex-direction: column;
     margin: auto;
+    padding: 20vh 0;
+}
+
+.criss__cross-box {
+    position: relative;
 }
 
 .criss__cross-link {
-    display: inline-block;
-    margin: 13px 0 21px 487px;
-}
-
-.form__box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: -50px;
+    right: 13px;
 }
 
 .title__box {
     margin: 0 0 40px;
     text-align: center;
+    position: relative;
 }
 
 .title__box-login {
-    display: inline;
+    display: inline-block;
     font-weight: 500;
     font-size: 20px;
     line-height: 16px;
+    padding: 0 12px 0 0;
 }
 
-.line {
-    display: inline;
-    margin: 0 10px 0 12px;
-    height: 16px;
+.title__box-login::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 1px;
+    position: absolute;
+    right: 255px;
+    top: 7px;
+    background: #3D3D3D;
+    transform: rotate(90deg);
 }
 
 .title__box-register {
-    display: inline;
+    display: inline-block;
     font-weight: 500;
     font-size: 20px;
     line-height: 16px;
+    padding-left: 10px;
     color: #46A358;
 }
 
 .form__title {
-    margin: 0 0 14px -70px;
-    text-align: center;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     color: #3D3D3D;
+    position: relative;
+    left: -35px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
 
 .input {
     display: block;
     width: 300px;
     height: auto;
-    margin: 0 0 16px;
     padding: 12px 0 12px 14px;
+    border: 1px solid #EAEAEA;
     border-radius: 5px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #EAEAEA;
+    outline: none;
     font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 114%;
+    color: #a5a5a5;
 }
 
 .button {
@@ -151,47 +167,69 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
-.line-with-text {
-    width: 315px;
-    text-align: center;
-    margin: 0 0 27px;
-    font-weight: 400;
-    font-size: 13px;
-    border-bottom: 1px solid #ccc;
-    line-height: 0px;
-}
+
 
 .line-with-text p {
-    display: inline;
     background: #fff;
-    padding: 0 10px;
+    padding: 0 7px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 123%;
+    color: #3d3d3d;
+    margin: 0 0 27px;
+}
+
+.line-with-text p::before {
+    content: "";
+    display: block;
+    width: 97px;
+    height: 0;
+    border: 1px solid #eaeaea;
+    position: absolute;
+    left: 93px;
+    top: 7px;
+    background: #EAEAEA;
+}
+
+.line-with-text p::after {
+    content: "";
+    display: block;
+    width: 97px;
+    height: 0;
+    border: 1px solid #eaeaea;
+    position: absolute;
+    right: 93px;
+    top: 7px;
+    background: #EAEAEA;
 }
 
 .logo {
     margin: 0 9px 0 0;
+    display: inline-block;
+    animation: logos 2s ease-in-out infinite alternate;
 }
 
 .link {
     width: 315px;
-    border-width: 1px;
+    border: 1px solid #EAEAEA;
     border-radius: 5px;
-    border-style: solid;
-    border-color: #EAEAEA;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 40px;
+    gap: 5px;
     font-weight: 500;
     font-size: 13px;
     line-height: 1rem;
     color: #727272;
-    margin-bottom: 10px;
+
 }
 
-.link:last-of-type {
-    margin-bottom: 0;
+.link:first-of-type {
+    margin-bottom: 10px;
 }
 
 .container {
@@ -219,6 +257,17 @@ header nav ul {
 
 ul>li>a {
     color: #3D3D3D;
+}
+
+header .header__login {
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header .header__login li:hover:not(:last-of-type) {
+    scale: 1.3;
+    transition: 0.5s;
 }
 
 header nav ul a {
@@ -279,20 +328,18 @@ header nav ul li .dropdown a:hover {
     color: #FFF;
 }
 
-header nav li .dropdown li:last-of-type a::after {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 10px;
-    position: absolute;
-    right: 17px;
-    top: 12px;
-    background-image: url("../img/arrow_menu.svg");
+
+header nav ul li .dropdown li .priming {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header nav ul li .dropdown a:hover::after {
-    background-image: url("../img/arrow_hover.svg");
+header nav ul li .dropdown li:hover .priming svg {
+    stroke: #fff;
     transform: rotate(180deg);
+    transition: 0.5s ease-out;
+    stroke-width: 1.2;
 }
 
 header nav ul li.drop:hover .dropdown {
@@ -324,6 +371,7 @@ header .login:hover {
     background-color: black;
     color: white;
 }
+
 
 header .login:hover svg {
     stroke: #46a358;
@@ -410,9 +458,7 @@ h1 span {
 }
 
 .categories {
-    flex-direction: column;
-    align-self: start;
-    padding: 14px 0 0 18px;
+    padding: 14px 24px 19px 18px;
 }
 
 .categories h3 {
@@ -424,8 +470,10 @@ h1 span {
 }
 
 .categories__list a {
-    flex-direction: column;
-    padding-left: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 12px;
     font-weight: 400;
     font-size: 14px;
     line-height: 40px;
@@ -519,6 +567,7 @@ h1 span {
 
 
 .filter__container ul li a {
+    align-items: center;
     font-weight: 400;
     font-size: 15px;
     line-height: 107%;
@@ -642,8 +691,6 @@ h1 span {
 
 .action .icons {
     opacity: 0;
-    width: 20px;
-    height: 20px;
     padding: 7px 6px;
     border-radius: 5px;
     background-color: #fff;
@@ -748,7 +795,7 @@ h1 span {
     border-radius: 6px;
     padding: 12px 27px;
     display: flex;
-    align-items: center;
+    align-items: end;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -756,20 +803,14 @@ h1 span {
     color: #fff;
 }
 
+.info a svg {
+    order: 1;
+}
+
 .info a:hover {
     border-radius: 6px;
     background-color: black;
-    color: white;
-}
-
-.info a::after {
-    content: "";
-    display: inline-block;
-    width: 14px;
-    height: 12px;
-    background-image: url('../img/info_arrow.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
+    color: #fff;
 }
 
 .blogs {
@@ -857,35 +898,18 @@ h1 span {
     font-size: 14px;
     line-height: 16px;
     color: #3D3D3D;
+    stroke: #3D3D3D;
+    stroke-width: 0.45;
+}
+
+.blog-card .arrow-blogs {
+    order: 1;
 }
 
 .blog-cards a:hover {
     color: #46A358;
-}
-
-.blog-card a::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-image: url('../img/arrow_blogs.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.blog-card a:hover::after {
-    content: "";
-    display: inline-block;
-    background-image: url('../img/arrow_blogs_hover.svg');
-}
-
-article .blog-card a {
-    order: 0;
-}
-
-.blog-card a:hover {
-    transition: color 0.4s;
-    color: #46A358;
+    stroke: #46A358;
+    stroke-width: 0.45;
 }
 
 .pagination__container {
@@ -902,6 +926,7 @@ article .blog-card a {
 
 .pagination li {
     border-radius: 4px;
+    border: 1px solid #e5e5e5;
 }
 
 .pagination li>a {
@@ -913,33 +938,25 @@ article .blog-card a {
     font-size: 18px;
     line-height: 89%;
     color: #3d3d3d;
-    min-width: 33px;
-    min-height: 33px;
+    min-width: 36px;
+    min-height: 36px;
 }
 
-.pagination li:not(:last-of-type) {
-    border: 1px solid #e5e5e5;
-}
-
-.pagination li:last-of-type {
-    min-width: 35px;
-    min-height: 35px;
-    background-image: url('../img/pagination_arrow.svg');
-}
-
-.pagination li:last-of-type:hover {
-    transition: 0.3s;
-    cursor: pointer;
-    background-color: #46A358;
-    background-image: url('../img/pagination_arrow_hover.svg');
-}
-
-.pagination li:hover,
 .pagination li:hover a {
-    background-color: #46a358;
-    font-weight: 700;
-    cursor: pointer;
     color: #fff;
+    font-weight: 700;
+}
+
+.pagination li a svg {
+    stroke: #fff;
+}
+
+.pagination li:hover {
+    background-color: #46a358;
+    cursor: pointer;
+    stroke: #fff;
+    color: #fff;
+    font-weight: 700;
 }
 
 .garden-care .container:first-of-type {
@@ -960,7 +977,7 @@ article .blog-card a {
     margin-bottom: 30px;
 }
 
-.garden-tips article img {
+.garden-tips article svg {
     margin-bottom: 15px;
 }
 
@@ -1066,7 +1083,15 @@ article .blog-card a {
     color: #727272;
 }
 
-.garden-care .address {
+.contact-information {
+    display: flex;
+    width: 100%;
+    padding-top: 22px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-information .address {
     display: flex;
     align-items: center;
     max-width: 200px;
@@ -1077,27 +1102,7 @@ article .blog-card a {
     color: #3d3d3d;
 }
 
-.garden-care .address::before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    padding-right: 9px;
-    background-image: url('../img/location.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.contact-information {
-    display: flex;
-    width: 100%;
-    padding-top: 22px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-
-.garden-care a {
+.contact-information a {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1107,28 +1112,11 @@ article .blog-card a {
     color: #3d3d3d;
 }
 
-.garden-care .email::before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    padding-right: 9px;
-    background-image: url('../img/email.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
+.contact-information .location-icon,
+.contact-information .email-icon,
+.contact-information .phone-icon {
+    order: -1;
 }
-
-.garden-care .phone::before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    padding-right: 9px;
-    background-image: url('../img/phone.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 
 footer .container {
     background-color: #FBFBFB;
@@ -1231,4 +1219,26 @@ footer .copyright p {
     line-height: 214%;
     color: #3d3d3d;
     margin-bottom: 22px;
+}
+
+@keyframes logos {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(160deg);
+    }
+
+    75% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
 }
