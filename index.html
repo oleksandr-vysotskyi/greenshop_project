@@ -13,10 +13,19 @@
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/media.css">
         <title>Greenshop</title>
     </head>
 
     <body>
+        <div class="preloader">
+            <svg width="102" height="102">
+                <use class="big-circle"
+                    href="./img/icons.svg#big-circle"></use>
+                <use class="small-circle"
+                    href="./img/icons.svg#small-circle"></use>
+            </svg>
+        </div>
         <header>
             <div class="container">
                 <a href="/index.html" class="logo" title="Greenshop">
@@ -137,7 +146,8 @@
                             Shop Now
                         </a>
                     </article>
-                    <img loading="lazy" src="./img/flower_pot.png" alt="banner">
+                    <img loading="lazy" max-width="517px"
+                        src="./img/flower_pot.png" alt="banner">
                 </div>
             </section>
             <section class="products">
@@ -228,12 +238,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="sale">
-                            <p>Super Sale</p>
-                            <p>UP TO 75% OFF</p>
-                            <img loading="lazy" src="./img/plant.png"
-                                alt="image-sale">
-                        </div>
+                        <img loading="lazy" width="310px"
+                            src="./img/super_sale.png"
+                            alt="image-sale">
                     </div>
                     <div class="items__container">
                         <div class="filter__container">

@@ -65,6 +65,63 @@ body {
     box-sizing: border-box;
 }
 
+.preloader {
+    display: block;
+    position: absolute;
+    width: 102px;
+    height: 102px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #46A358;
+    fill: none;
+}
+
+.preloader svg use {
+    animation: 3s alternate;
+}
+
+.preloader .big-circle {
+    stroke-dasharray: 240;
+    stroke-dashoffset: 240;
+    transform-origin: 50%;
+    animation-name: draw-big;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+@keyframes draw-big {
+    0% {
+        stroke-dashoffset: 0;
+        transform: rotateY(180deg) rotate(360deg);
+    }
+
+    100% {
+        stroke-dashoffset: 240;
+        transform: rotateY(180deg) rotate(0deg);
+    }
+}
+
+.preloader .small-circle {
+    stroke-dasharray: 210;
+    stroke-dashoffset: 210;
+    transform-origin: 50%;
+    animation-name: draw-small;
+    animation-duration: 1s;
+}
+
+@keyframes draw-small {
+    0% {
+        stroke-dashoffset: 0;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        stroke-dashoffset: 210;
+        transform: rotate(360deg);
+    }
+}
+
 .container__form {
     display: flex;
     max-width: 500px;
@@ -486,49 +543,6 @@ h1 span {
     line-height: 267%;
     transition: color 0.1s;
     color: #46a358;
-}
-
-.sale {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image:
-        linear-gradient(to bottom, #46A3581A, #46A35808),
-        url('../img/circle-large.svg'),
-        url('../img/circle-medium.svg'),
-        url('../img/circle-small.svg');
-    background-size:
-        cover,
-        15px,
-        22px,
-        45px;
-    background-position:
-        center,
-        top 100px left 30px,
-        bottom 150px left 20px,
-        bottom 60px right 20px;
-    background-repeat: no-repeat;
-}
-
-.sale p:first-of-type {
-    font-weight: 400;
-    font-size: 65px;
-    line-height: 65px;
-    font-family: 'Hanging Letters', sans-serif;
-    color: #46A358;
-    padding-top: 18px;
-    margin-bottom: 11px;
-}
-
-.sale p:last-of-type {
-    font-weight: 700;
-    font-size: 23px;
-    line-height: 1rem;
-    color: #3D3D3D;
-}
-
-.sale img {
-    width: 310px;
 }
 
 .items__container {
