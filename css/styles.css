@@ -266,7 +266,17 @@ body {
 .logo {
     margin: 0 9px 0 0;
     display: inline-block;
-    animation: logos 2s ease-in-out infinite alternate;
+    animation: logos 5s ease-in-out 5s infinite;
+}
+
+@keyframes logos {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .link {
@@ -1233,26 +1243,4 @@ footer .copyright p {
     line-height: 214%;
     color: #3d3d3d;
     margin-bottom: 22px;
-}
-
-@keyframes logos {
-    0% {
-        transform: rotate(0);
-    }
-
-    25% {
-        transform: rotate(45deg);
-    }
-
-    50% {
-        transform: rotate(160deg);
-    }
-
-    75% {
-        transform: rotate(45deg);
-    }
-
-    100% {
-        transform: rotate(0);
-    }
 }
