@@ -1,0 +1,106 @@
+.information {
+  margin-bottom: 138px;
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .information {
+    margin-bottom: 40px;
+    background-color: #fbfbfb;
+  }
+}
+.information .info-cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .information .info-cards {
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
+.information .info-cards article {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fbfbfb;
+  max-width: 586px;
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .information .info-cards article {
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.information .info-cards article > img {
+  width: 292px;
+  height: 292px;
+  position: relative;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: -36px;
+}
+.information .info-cards .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding-right: 30px;
+  gap: 20px;
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .information .info-cards .info {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+.information .info-cards .info h3 {
+  max-width: 150px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.information .info-cards .info p {
+  max-width: 292px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  text-align: right;
+  color: #727272;
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .information .info-cards .info p {
+    max-width: 280px;
+  }
+}
+.information .info-cards .info a {
+  background: #46a358;
+  border-radius: 6px;
+  padding: 12px 27px;
+  display: flex;
+  align-items: end;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  gap: 5px;
+  color: #fff;
+}
+.information .info-cards .info a:hover {
+  border-radius: 6px;
+  background-color: black;
+  color: #fff;
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .information .info-cards .info a {
+    margin: 0 0 40px;
+  }
+}
+.information .info-cards .info a svg {
+  order: 1;
+}/*# sourceMappingURL=info.css.map */

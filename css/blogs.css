@@ -1,0 +1,116 @@
+.blogs {
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .blogs {
+    margin: 0 0 80px;
+  }
+}
+.blogs .container {
+  display: inherit;
+}
+.blogs .blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+.blogs .blog h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .blogs .blog h3 {
+    max-width: 215px;
+  }
+}
+.blogs .blog p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #727272;
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .blogs .blog p {
+    max-width: 205px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .blogs .blog {
+    margin: 0 0 24px;
+  }
+}
+.blogs .blog-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-flow: row wrap;
+}
+.blogs .blog-cards h5 {
+  margin-bottom: 4px;
+  max-width: 189px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #3d3d3d;
+}
+.blogs .blog-cards p:last-of-type {
+  margin-bottom: 9px;
+  max-width: 242px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #727272;
+}
+.blogs .blog-cards a {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 13px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3d3d3d;
+  stroke: #3d3d3d;
+  stroke-width: 0.45;
+}
+.blogs .blog-cards a:hover {
+  color: #46a358;
+  stroke: #46a358;
+  stroke-width: 0.45;
+}
+.blogs .blog-cards article {
+  background-color: #fbfbfb;
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .blogs .blog-cards article:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+}
+.blogs .blog-cards article .blog-img {
+  margin-bottom: 8px;
+}
+.blogs .blog-cards article .blog-card {
+  padding-left: 10px;
+}
+.blogs .blog-cards article .blog-card .arrow-blogs {
+  order: 1;
+}
+.blogs .blog-cards article .blog-card p:first-of-type {
+  margin-bottom: 4px;
+  max-width: 222px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #46a358;
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .blogs .blog-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=blogs.css.map */

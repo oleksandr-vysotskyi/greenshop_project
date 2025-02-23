@@ -1,0 +1,136 @@
+@mixin between-screen($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+.banner {
+  margin-bottom: 48px;
+  .container {
+    background-color: #fbfbfb;
+    padding: 0 0 0 43px;
+    box-sizing: border-box;
+    @include between-screen(414px, 429px) {
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 12px 12px;
+      box-sizing: border-box;
+    }
+  }
+  h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1rem;
+    margin-bottom: 7px;
+    padding-top: 68px;
+    @include between-screen(414px, 429px) {
+      max-width: 205px;
+      padding: 0;
+    }
+  }
+  h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 5px;
+    max-width: 700px;
+    @include between-screen(414px, 429px) {
+      max-width: 318px;
+      font-size: 42px;
+      margin-bottom: 12px;
+      line-height: 100%;
+    }
+    span {
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 70px;
+      line-height: 70px;
+      color: #46a358;
+      @include between-screen(414px, 429px) {
+        font-size: 42px;
+        line-height: 100%;
+      }
+    }
+  }
+  article:first-of-type {
+    @include between-screen(414px, 429px) {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+  .description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 44px;
+    max-width: 530px;
+    @include between-screen(414px, 429px) {
+      max-width: 345px;
+      font-size: 16px;
+      line-height: 130%;
+      margin-bottom: 16px;
+    }
+  }
+  .shop-now-desk {
+    display: inline-block;
+    background: #46a358;
+    text-transform: uppercase;
+    padding: 11px 27px;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 6px;
+    margin-bottom: 85px;
+    @include between-screen(414px, 429px) {
+      display: none;
+    }
+  }
+
+  .shop {
+    @include between-screen(414px, 429px) {
+      display: flex;
+      justify-content: center;
+      margin: 0 0 46px;
+    }
+    .shop-now-mob {
+      display: none;
+      background: #46a358;
+      text-transform: uppercase;
+      padding: 11px 27px;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 20px;
+      color: #fff;
+      border-radius: 6px;
+      margin-bottom: 0;
+      @include between-screen(414px, 429px) {
+        display: inline-block;
+      }
+    }
+  }
+  .shop-now-desk:hover {
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+  }
+  .image__container {
+    display: flex;
+    @include between-screen(414px, 429px) {
+      justify-content: center;
+    }
+    img {
+      flex-grow: 1;
+      flex-shrink: 1;
+      max-width: 100%;
+      height: auto;
+      @include between-screen(414px, 429px) {
+        max-width: 60%;
+        margin: 0 0 12px;
+      }
+    }
+  }
+}

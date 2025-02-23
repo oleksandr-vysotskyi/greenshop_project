@@ -1,0 +1,164 @@
+@mixin between-screen($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+$bright-gray-color: #eaeaea;
+
+.container__form {
+  display: flex;
+  max-width: 500px;
+  flex-direction: column;
+  margin: auto;
+  padding: 20vh 0;
+  @include between-screen(414px, 429px) {
+    padding: 22vh 1vh;
+  }
+  .criss__cross-box {
+    position: relative;
+    .criss__cross-link {
+      position: absolute;
+      top: -50px;
+      right: 13px;
+    }
+  }
+}
+
+.title__box {
+  margin: 0 0 40px;
+  text-align: center;
+  position: relative;
+  .title__box-login {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 16px;
+    padding: 0 12px 0 0;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 12px;
+      height: 1px;
+      position: absolute;
+      right: 255px;
+      top: 7px;
+      background: #3d3d3d;
+      transform: rotate(90deg);
+      @include between-screen(414px, 429px) {
+        right: 205px;
+      }
+    }
+  }
+  .title__box-register {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 16px;
+    padding-left: 10px;
+    color: #46a358;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  .form__title {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #3d3d3d;
+    position: relative;
+    left: -35px;
+  }
+  .input {
+    display: block;
+    width: 300px;
+    height: auto;
+    padding: 12px 0 12px 14px;
+    border: 1px solid $bright-gray-color;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #a5a5a5;
+  }
+  .button {
+    width: 315px;
+    margin: 0 0 36px;
+    border: none;
+    padding: 16px 0 13px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #46a358;
+    cursor: pointer;
+  }
+}
+
+.register__with-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  .line-with-text p {
+    background: #fff;
+    padding: 0 7px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 123%;
+    color: #3d3d3d;
+    margin: 0 0 27px;
+    &::before {
+      content: "";
+      display: block;
+      width: 97px;
+      height: 0;
+      border: 1px solid $bright-gray-color;
+      position: absolute;
+      left: 93px;
+      top: 7px;
+      background: $bright-gray-color;
+      @include between-screen(414px, 429px) {
+        left: 40px;
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 97px;
+      height: 0;
+      border: 1px solid $bright-gray-color;
+      position: absolute;
+      right: 93px;
+      top: 7px;
+      background: $bright-gray-color;
+      @include between-screen(414px, 429px) {
+        right: 40px;
+      }
+    }
+  }
+  .link {
+    width: 315px;
+    border: 1px solid $bright-gray-color;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    gap: 5px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1rem;
+    color: #727272;
+    &:first-of-type {
+      margin-bottom: 10px;
+    }
+  }
+}

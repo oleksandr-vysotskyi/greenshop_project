@@ -1,0 +1,218 @@
+.garden-care .container {
+  display: inherit;
+}
+.garden-care .container:first-of-type {
+  background-color: #fbfbfb;
+  padding: 24px 25px;
+  background: linear-gradient(to bottom, #fbfbfb 74%, transparent 70%), linear-gradient(to right, #edf6ef, #52c368);
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .garden-care .container:first-of-type {
+    background: linear-gradient(to bottom, #fbfbfb 77%, transparent 70%), linear-gradient(to right, #edf6ef, #52c368);
+    padding: 12px;
+  }
+}
+.garden-care .container:first-of-type .garden-tips {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .garden-care .container:first-of-type .garden-tips {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .garden-care .container:first-of-type .garden-tips article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+}
+.garden-care .container:first-of-type .garden-tips article svg {
+  margin-bottom: 15px;
+}
+.garden-care .container:first-of-type .garden-tips article h4 {
+  margin-bottom: 9px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 94%;
+  color: #3d3d3d;
+}
+.garden-care .container:first-of-type .garden-tips article p {
+  max-width: 204px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #727272;
+}
+.garden-care .container:first-of-type .garden-tips article:last-of-type p:first-of-type {
+  padding: 13px 0 0;
+  margin-bottom: 25px;
+  min-width: 298px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 89%;
+  color: #3d3d3d;
+}
+.garden-care .container:first-of-type .garden-tips article:nth-of-type(2) {
+  position: relative;
+}
+.garden-care .container:first-of-type .garden-tips article:nth-of-type(2)::before {
+  content: "";
+  display: block;
+  width: 187px;
+  height: 1px;
+  position: absolute;
+  top: 100px;
+  left: -120px;
+  background: rgba(70, 163, 88, 0.1019607843);
+  transform: rotate(90deg);
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .garden-care .container:first-of-type .garden-tips article:nth-of-type(2)::before {
+    transform: rotate(180deg);
+    top: -20px;
+    left: 10px;
+  }
+}
+.garden-care .container:first-of-type .garden-tips article:nth-of-type(2)::after {
+  content: "";
+  display: block;
+  width: 187px;
+  height: 1px;
+  position: absolute;
+  top: 100px;
+  right: -120px;
+  background: rgba(70, 163, 88, 0.1019607843);
+  transform: rotate(90deg);
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .garden-care .container:first-of-type .garden-tips article:nth-of-type(2)::after {
+    transform: rotate(180deg);
+    top: 210px;
+    left: 10px;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .garden-care .container:first-of-type .garden-tips article:last-of-type {
+    order: -1;
+    margin: 0 0 64px;
+  }
+}
+.garden-care .container:first-of-type .garden-tips article:last-of-type form {
+  display: flex;
+  justify-content: space-between;
+  min-width: 354px;
+  height: 40px;
+  margin-bottom: 18px;
+  background-color: #fff;
+  border-radius: 6px 0 0 6px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.0588235294);
+  overflow: hidden;
+}
+.garden-care .container:first-of-type .garden-tips article:last-of-type form input {
+  min-width: 269px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  padding: 0 0 0 11px;
+  border: none;
+  outline: none;
+  color: #727272;
+}
+.garden-care .container:first-of-type .garden-tips article:last-of-type form button {
+  min-width: 78px;
+  border-radius: 0 6px 6px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 89%;
+  background-color: #46a358;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+.garden-care .container:first-of-type .garden-tips article:last-of-type form button:hover {
+  background-color: black;
+  color: white;
+}
+.garden-care .container:first-of-type .garden-tips article:last-of-type p:last-of-type {
+  max-width: 354px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 169%;
+  color: #727272;
+}
+
+.contact-information {
+  display: flex;
+  width: 100%;
+  padding-top: 22px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .contact-information {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 0;
+  }
+}
+.contact-information .address {
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #3d3d3d;
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .contact-information .address {
+    max-width: 170px;
+    flex-direction: column;
+  }
+}
+.contact-information .email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #3d3d3d;
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .contact-information .email {
+    flex-direction: column;
+    max-width: 165px;
+  }
+}
+.contact-information .phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #3d3d3d;
+}
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .contact-information .phone {
+    flex-direction: column;
+  }
+}
+.contact-information .location-icon,
+.contact-information .email-icon,
+.contact-information .phone-icon {
+  order: -1;
+}/*# sourceMappingURL=garden-tips.css.map */
