@@ -1,4 +1,12 @@
 <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+    <symbol fill="none" id="big-circle" viewBox="0 0 102 102">
+        <path d="M101 51C101 78.6142 78.6142 101 51 101C23.3858 101 1 78.6142 1 51" stroke="currentColor"
+            stroke-width="2" />
+    </symbol>
+    <symbol fill="none" id="small-circle" viewBox="0 0 102 102">
+        <path d="M91 51C91 28.9086 73.0914 11 51 11C28.9086 11 11 28.9086 11 51" stroke="currentColor"
+            stroke-width="2" />
+    </symbol>
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10" id="arrow_menu">
         <path
             d="M1.14228 0.945805C0.909014 0.730097 0.908201 0.379612 1.14046 0.162973C1.35161 -0.0339699 1.68269 -0.0524979 1.9164 0.107825L1.98337 0.161288L6.79132 4.60737C7.00401 4.80406 7.02336 5.11265 6.84935 5.32969L6.79135 5.39186L1.9834 9.83868C1.75016 10.0544 1.37278 10.0537 1.1405 9.83706C0.929333 9.64013 0.910782 9.33257 1.08439 9.1162L1.14224 9.05423L5.52584 4.99941L1.14228 0.945805Z"
