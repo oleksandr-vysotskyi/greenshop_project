@@ -42,6 +42,12 @@
      object-fit: contain;
   top: -36px;
 }
+@media screen and (min-width: 414px) and (max-width: 429px) {
+  .information .info-cards article > img {
+    max-width: 75%;
+    height: auto;
+  }
+}
 .information .info-cards .info {
   display: flex;
   flex-direction: column;

@@ -37,6 +37,10 @@
         position: relative;
         object-fit: contain;
         top: -36px;
+        @include between-screen(414px, 429px) {
+          max-width: 75%;
+          height: auto;
+        }
       }
     }
     .info {

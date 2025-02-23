@@ -165,7 +165,7 @@ $mercury-color: #e5e5e5;
     background-color: $whiteout-color;
     margin-bottom: 12px;
     @include between-screen(414px, 429px) {
-      max-width: 100%;
+      max-width: 75%;
       height: auto;
     }
   }
@@ -204,6 +204,11 @@ $mercury-color: #e5e5e5;
     }
   }
   article {
+    @include between-screen(414px, 429px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     border-top: 1px solid transparent;
     position: relative;
     &:hover .action .icons {
