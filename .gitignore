@@ -9,3 +9,4 @@ node_modules
 .husky
 test.html
 test.css
+settings.json
