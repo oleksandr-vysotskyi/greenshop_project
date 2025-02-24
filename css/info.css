@@ -1,7 +1,7 @@
 .information {
   margin-bottom: 138px;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .information {
     margin-bottom: 40px;
     background-color: #fbfbfb;
@@ -13,7 +13,7 @@
   justify-content: space-between;
   flex-flow: row wrap;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .information .info-cards {
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@
   background-color: #fbfbfb;
   max-width: 586px;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .information .info-cards article {
     background-color: transparent;
     flex-direction: column;
@@ -42,7 +42,7 @@
      object-fit: contain;
   top: -36px;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .information .info-cards article > img {
     max-width: 75%;
     height: auto;
@@ -56,7 +56,7 @@
   padding-right: 30px;
   gap: 20px;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .information .info-cards .info {
     justify-content: center;
     align-items: center;
@@ -80,7 +80,7 @@
   text-align: right;
   color: #727272;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .information .info-cards .info p {
     max-width: 280px;
   }
@@ -102,7 +102,7 @@
   background-color: black;
   color: #fff;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .information .info-cards .info a {
     margin: 0 0 40px;
   }

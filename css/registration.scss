@@ -3,6 +3,11 @@
     @content;
   }
 }
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 
 $bright-gray-color: #eaeaea;
 
@@ -12,7 +17,7 @@ $bright-gray-color: #eaeaea;
   flex-direction: column;
   margin: auto;
   padding: 20vh 0;
-  @include between-screen(414px, 429px) {
+  @include between-screen(414px, 430px) {
     padding: 22vh 1vh;
   }
   .criss__cross-box {
@@ -45,8 +50,11 @@ $bright-gray-color: #eaeaea;
       top: 7px;
       background: #3d3d3d;
       transform: rotate(90deg);
-      @include between-screen(414px, 429px) {
+      @include between-screen(414px, 430px) {
         right: 205px;
+      }
+      @include max-screen(430px) {
+        right: 195px;
       }
     }
   }
@@ -125,7 +133,7 @@ $bright-gray-color: #eaeaea;
       left: 93px;
       top: 7px;
       background: $bright-gray-color;
-      @include between-screen(414px, 429px) {
+      @include between-screen(414px, 430px) {
         left: 40px;
       }
     }
@@ -139,7 +147,7 @@ $bright-gray-color: #eaeaea;
       right: 93px;
       top: 7px;
       background: $bright-gray-color;
-      @include between-screen(414px, 429px) {
+      @include between-screen(414px, 430px) {
         right: 40px;
       }
     }

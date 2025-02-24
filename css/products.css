@@ -6,7 +6,7 @@
   align-items: stretch;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .products .container {
     flex-direction: column;
     align-items: center;
@@ -21,7 +21,7 @@
   background-color: #fbfbfb;
   justify-content: space-between;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .categories__container {
     order: 2;
   }
@@ -60,7 +60,7 @@
   flex-wrap: wrap;
   gap: 31px;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .items__container {
     flex-direction: column;
     align-items: center;
@@ -78,7 +78,7 @@
   justify-content: space-between;
   flex-direction: row;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .filter__container {
     flex-direction: column;
     align-items: center;
@@ -148,7 +148,7 @@
   justify-content: space-between;
   flex-flow: row wrap;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .cards__container {
     flex-direction: column;
     align-items: center;
@@ -163,7 +163,7 @@
   background-color: #fbfbfb;
   margin-bottom: 12px;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .cards__container img {
     max-width: 75%;
     height: auto;
@@ -205,7 +205,7 @@
   border-top: 1px solid transparent;
   position: relative;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .cards__container article {
     display: flex;
     flex-direction: column;
@@ -215,7 +215,7 @@
 .cards__container article:hover .action .icons {
   opacity: 1;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .cards__container article:active .action .icons {
     opacity: 1;
   }
@@ -272,7 +272,7 @@
   justify-content: end;
   padding-top: 90px;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .pagination__container {
     flex-direction: column;
     align-items: center;

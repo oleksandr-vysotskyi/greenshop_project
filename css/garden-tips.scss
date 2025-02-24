@@ -11,7 +11,7 @@
     padding: 24px 25px;
     background: linear-gradient(to bottom, #fbfbfb 74%, transparent 70%),
       linear-gradient(to right, #edf6ef, #52c368);
-    @include between-screen(414px, 429px) {
+    @include between-screen(414px, 430px) {
       background: linear-gradient(to bottom, #fbfbfb 77%, transparent 70%),
         linear-gradient(to right, #edf6ef, #52c368);
       padding: 12px;
@@ -22,14 +22,14 @@
       justify-content: space-between;
       flex-wrap: wrap;
       margin-bottom: 30px;
-      @include between-screen(414px, 429px) {
+      @include between-screen(414px, 430px) {
         width: 100%;
         align-items: center;
         justify-content: center;
         margin-bottom: 20px;
       }
       article {
-        @include between-screen(414px, 429px) {
+        @include between-screen(414px, 430px) {
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -75,7 +75,7 @@
           left: -120px;
           background: #46a3581a;
           transform: rotate(90deg);
-          @include between-screen(414px, 429px) {
+          @include between-screen(414px, 430px) {
             transform: rotate(180deg);
             top: -20px;
             left: 10px;
@@ -91,14 +91,14 @@
           right: -120px;
           background: #46a3581a;
           transform: rotate(90deg);
-          @include between-screen(414px, 429px) {
+          @include between-screen(414px, 430px) {
             transform: rotate(180deg);
             top: 210px;
             left: 10px;
           }
         }
         &:last-of-type {
-          @include between-screen(414px, 429px) {
+          @include between-screen(414px, 430px) {
             order: -1;
             margin: 0 0 64px;
           }
@@ -157,7 +157,7 @@
   padding-top: 22px;
   flex-wrap: wrap;
   justify-content: space-between;
-  @include between-screen(414px, 429px) {
+  @include between-screen(414px, 430px) {
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -172,7 +172,7 @@
     font-size: 14px;
     line-height: 157%;
     color: #3d3d3d;
-    @include between-screen(414px, 429px) {
+    @include between-screen(414px, 430px) {
       max-width: 170px;
       flex-direction: column;
     }
@@ -185,7 +185,7 @@
     font-size: 14px;
     line-height: 157%;
     color: #3d3d3d;
-    @include between-screen(414px, 429px) {
+    @include between-screen(414px, 430px) {
       flex-direction: column;
       max-width: 165px;
     }
@@ -198,7 +198,7 @@
     font-size: 14px;
     line-height: 157%;
     color: #3d3d3d;
-    @include between-screen(414px, 429px) {
+    @include between-screen(414px, 430px) {
       flex-direction: column;
     }
   }

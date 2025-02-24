@@ -4,7 +4,7 @@ header .container {
   padding-bottom: 18px;
   border-bottom: 1px solid rgba(245, 245, 245, 0.5019607843);
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   header .container {
     margin-bottom: 0;
     padding: 12px;
@@ -47,7 +47,7 @@ header nav ul li .dropdown {
   left: -60px;
   padding-top: 40px;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   header nav ul li {
     display: none;
   }

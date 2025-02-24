@@ -5,7 +5,7 @@
   margin: auto;
   padding: 20vh 0;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .container__form {
     padding: 22vh 1vh;
   }
@@ -42,9 +42,14 @@
   background: #3d3d3d;
   transform: rotate(90deg);
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .title__box .title__box-login::after {
     right: 205px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .title__box .title__box-login::after {
+    right: 195px;
   }
 }
 .title__box .title__box-register {
@@ -124,7 +129,7 @@
   top: 7px;
   background: #eaeaea;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .register__with-box .line-with-text p::before {
     left: 40px;
   }
@@ -140,7 +145,7 @@
   top: 7px;
   background: #eaeaea;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .register__with-box .line-with-text p::after {
     right: 40px;
   }

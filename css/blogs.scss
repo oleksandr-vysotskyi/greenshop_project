@@ -6,7 +6,7 @@
 
 .blogs {
   margin-bottom: 100px;
-  @include between-screen(414px, 429px) {
+  @include between-screen(414px, 430px) {
     margin: 0 0 80px;
   }
   .container {
@@ -23,7 +23,7 @@
       font-size: 30px;
       line-height: 16px;
       color: #3d3d3d;
-      @include between-screen(414px, 429px) {
+      @include between-screen(414px, 430px) {
         max-width: 215px;
       }
     }
@@ -32,12 +32,12 @@
       font-size: 14px;
       line-height: 24px;
       color: #727272;
-      @include between-screen(414px, 429px) {
+      @include between-screen(414px, 430px) {
         max-width: 205px;
         text-align: center;
       }
     }
-    @include between-screen(414px, 429px) {
+    @include between-screen(414px, 430px) {
       margin: 0 0 24px;
     }
   }
@@ -81,7 +81,7 @@
     }
     article {
       background-color: #fbfbfb;
-      @include between-screen(414px, 429px) {
+      @include between-screen(414px, 430px) {
         &:not(:last-of-type) {
           margin-bottom: 40px;
         }
@@ -104,7 +104,7 @@
         }
       }
     }
-    @include between-screen(414px, 429px) {
+    @include between-screen(414px, 430px) {
       flex-direction: column;
       align-items: center;
     }

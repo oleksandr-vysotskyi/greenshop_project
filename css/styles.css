@@ -124,7 +124,7 @@ body {
   align-items: center;
   box-sizing: border-box;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .container {
     padding: 12px;
   }

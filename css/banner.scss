@@ -10,7 +10,7 @@
     background-color: #fbfbfb;
     padding: 0 0 0 43px;
     box-sizing: border-box;
-    @include between-screen(414px, 429px) {
+    @include between-screen(414px, 430px) {
       flex-direction: column;
       align-items: center;
       padding: 24px 12px 12px;
@@ -24,7 +24,7 @@
     line-height: 1rem;
     margin-bottom: 7px;
     padding-top: 68px;
-    @include between-screen(414px, 429px) {
+    @include between-screen(414px, 430px) {
       max-width: 205px;
       padding: 0;
     }
@@ -36,7 +36,7 @@
     line-height: 70px;
     margin-bottom: 5px;
     max-width: 700px;
-    @include between-screen(414px, 429px) {
+    @include between-screen(414px, 430px) {
       max-width: 318px;
       font-size: 42px;
       margin-bottom: 12px;
@@ -48,14 +48,14 @@
       font-size: 70px;
       line-height: 70px;
       color: #46a358;
-      @include between-screen(414px, 429px) {
+      @include between-screen(414px, 430px) {
         font-size: 42px;
         line-height: 100%;
       }
     }
   }
   article:first-of-type {
-    @include between-screen(414px, 429px) {
+    @include between-screen(414px, 430px) {
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -67,7 +67,7 @@
     line-height: 24px;
     margin-bottom: 44px;
     max-width: 530px;
-    @include between-screen(414px, 429px) {
+    @include between-screen(414px, 430px) {
       max-width: 345px;
       font-size: 16px;
       line-height: 130%;
@@ -85,13 +85,13 @@
     color: #fff;
     border-radius: 6px;
     margin-bottom: 85px;
-    @include between-screen(414px, 429px) {
+    @include between-screen(414px, 430px) {
       display: none;
     }
   }
 
   .shop {
-    @include between-screen(414px, 429px) {
+    @include between-screen(414px, 430px) {
       display: flex;
       justify-content: center;
       margin: 0 0 46px;
@@ -107,7 +107,7 @@
       color: #fff;
       border-radius: 6px;
       margin-bottom: 0;
-      @include between-screen(414px, 429px) {
+      @include between-screen(414px, 430px) {
         display: inline-block;
       }
     }
@@ -119,7 +119,7 @@
   }
   .image__container {
     display: flex;
-    @include between-screen(414px, 429px) {
+    @include between-screen(414px, 430px) {
       justify-content: center;
     }
     img {
@@ -127,7 +127,7 @@
       flex-shrink: 1;
       max-width: 100%;
       height: auto;
-      @include between-screen(414px, 429px) {
+      @include between-screen(414px, 430px) {
         max-width: 60%;
         margin: 0 0 12px;
       }

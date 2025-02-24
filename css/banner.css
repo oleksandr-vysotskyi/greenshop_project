@@ -6,7 +6,7 @@
   padding: 0 0 0 43px;
   box-sizing: border-box;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .banner .container {
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,7 @@
   margin-bottom: 7px;
   padding-top: 68px;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .banner h3 {
     max-width: 205px;
     padding: 0;
@@ -36,7 +36,7 @@
   margin-bottom: 5px;
   max-width: 700px;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .banner h1 {
     max-width: 318px;
     font-size: 42px;
@@ -51,13 +51,13 @@
   line-height: 70px;
   color: #46a358;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .banner h1 span {
     font-size: 42px;
     line-height: 100%;
   }
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .banner article:first-of-type {
     display: flex;
     flex-direction: column;
@@ -71,7 +71,7 @@
   margin-bottom: 44px;
   max-width: 530px;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .banner .description {
     max-width: 345px;
     font-size: 16px;
@@ -91,12 +91,12 @@
   border-radius: 6px;
   margin-bottom: 85px;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .banner .shop-now-desk {
     display: none;
   }
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .banner .shop {
     display: flex;
     justify-content: center;
@@ -115,7 +115,7 @@
   border-radius: 6px;
   margin-bottom: 0;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .banner .shop .shop-now-mob {
     display: inline-block;
   }
@@ -128,7 +128,7 @@
 .banner .image__container {
   display: flex;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .banner .image__container {
     justify-content: center;
   }
@@ -139,7 +139,7 @@
   max-width: 100%;
   height: auto;
 }
-@media screen and (min-width: 414px) and (max-width: 429px) {
+@media screen and (min-width: 414px) and (max-width: 430px) {
   .banner .image__container img {
     max-width: 60%;
     margin: 0 0 12px;
