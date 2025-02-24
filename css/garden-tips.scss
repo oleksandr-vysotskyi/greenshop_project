@@ -9,7 +9,7 @@
   &:first-of-type {
     background-color: #fbfbfb;
     padding: 24px 25px;
-    background: linear-gradient(to bottom, #fbfbfb 74%, transparent 70%),
+    background: linear-gradient(to bottom, #fbfbfb 72%, transparent 70%),
       linear-gradient(to right, #edf6ef, #52c368);
     @include between-screen(414px, 430px) {
       background: linear-gradient(to bottom, #fbfbfb 77%, transparent 70%),

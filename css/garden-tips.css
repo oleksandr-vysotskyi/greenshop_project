@@ -4,7 +4,7 @@
 .garden-care .container:first-of-type {
   background-color: #fbfbfb;
   padding: 24px 25px;
-  background: linear-gradient(to bottom, #fbfbfb 74%, transparent 70%), linear-gradient(to right, #edf6ef, #52c368);
+  background: linear-gradient(to bottom, #fbfbfb 72%, transparent 70%), linear-gradient(to right, #edf6ef, #52c368);
 }
 @media screen and (min-width: 414px) and (max-width: 430px) {
   .garden-care .container:first-of-type {
