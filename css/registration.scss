@@ -54,7 +54,7 @@ $bright-gray-color: #eaeaea;
         right: 205px;
       }
       @include max-screen(430px) {
-        right: 195px;
+        right: 212px;
       }
     }
   }
@@ -136,6 +136,9 @@ $bright-gray-color: #eaeaea;
       @include between-screen(414px, 430px) {
         left: 40px;
       }
+      @include max-screen(430px) {
+        left: 49px;
+      }
     }
     &::after {
       content: "";
@@ -149,6 +152,9 @@ $bright-gray-color: #eaeaea;
       background: $bright-gray-color;
       @include between-screen(414px, 430px) {
         right: 40px;
+      }
+      @include max-screen(430px) {
+        right: 49px;
       }
     }
   }
