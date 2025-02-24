@@ -49,7 +49,7 @@
 }
 @media screen and (max-width: 430px) {
   .title__box .title__box-login::after {
-    right: 212px;
+    right: 213px;
   }
 }
 .title__box .title__box-register {
