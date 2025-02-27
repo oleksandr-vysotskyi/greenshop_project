@@ -11,6 +11,8 @@
         <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
         <link rel="stylesheet" href="./css/owl.carousel.css">
         <link rel="stylesheet" href="./css/owl.theme.default.css">
+        <link rel="stylesheet"
+            href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/styles.css">
@@ -246,7 +248,43 @@
                                 </li>
                             </ul>
                         </div>
-                        <img loading="lazy" width="310px"
+                        <div class="price__range">
+                            <h3>Price Range</h3>
+                            <div class="slider__range" id="slider-range"></div>
+                            <p>
+                                <label for="amount">Price:</label>
+                                <input type="text" id="amount" readonly>
+                            </p>
+                            <a href="#">Filter</a>
+                            <h3>Size</h3>
+                            <ul class="size">
+                                <li>
+                                    <a href="#">
+                                        Small
+                                        <span>
+                                            (119)
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Medium
+                                        <span>
+                                            (86)
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Large
+                                        <span>
+                                            (78)
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <img loading="lazy" width="310"
                             src="./img/super_sale.png"
                             alt="image-sale">
                     </div>
@@ -596,6 +634,78 @@
                             </article>
                         </div>
                     </div>
+
+                    <!-- FAQ -->
+                    <section class="faq">
+                        <div class="container">
+                            <div id="accordion">
+                                <h3>Section 1</h3>
+                                <div>
+                                    <p>
+                                        Mauris mauris ante, blandit et, ultrices
+                                        a, suscipit eget, quam. Integer
+                                        ut neque. Vivamus nisi metus, molestie
+                                        vel, gravida in, condimentum sit
+                                        amet, nunc. Nam a nibh. Donec suscipit
+                                        eros. Nam mi. Proin viverra leo ut
+                                        odio. Curabitur malesuada. Vestibulum a
+                                        velit eu ante scelerisque vulputate.
+                                    </p>
+                                </div>
+                                <h3>Section 2</h3>
+                                <div>
+                                    <p>
+                                        Sed non urna. Donec et ante. Phasellus
+                                        eu ligula. Vestibulum sit amet
+                                        purus. Vivamus hendrerit, dolor at
+                                        aliquet laoreet, mauris turpis porttitor
+                                        velit, faucibus interdum tellus libero
+                                        ac justo. Vivamus non quam. In
+                                        suscipit faucibus urna.
+                                    </p>
+                                </div>
+                                <h3>Section 3</h3>
+                                <div>
+                                    <p>
+                                        Nam enim risus, molestie et, porta ac,
+                                        aliquam ac, risus. Quisque lobortis.
+                                        Phasellus pellentesque purus in massa.
+                                        Aenean in pede. Phasellus ac libero
+                                        ac tellus pellentesque semper. Sed ac
+                                        felis. Sed commodo, magna quis
+                                        lacinia ornare, quam ante aliquam nisi,
+                                        eu iaculis leo purus venenatis dui.
+                                    </p>
+                                    <ul>
+                                        <li>List item one</li>
+                                        <li>List item two</li>
+                                        <li>List item three</li>
+                                    </ul>
+                                </div>
+                                <h3>Section 4</h3>
+                                <div>
+                                    <p>
+                                        Cras dictum. Pellentesque habitant morbi
+                                        tristique senectus et netus
+                                        et malesuada fames ac turpis egestas.
+                                        Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere
+                                        cubilia Curae; Aenean lacinia
+                                        mauris vel est.
+                                    </p>
+                                    <p>
+                                        Suspendisse eu nisl. Nullam ut libero.
+                                        Integer dignissim consequat lectus.
+                                        Class aptent taciti sociosqu ad litora
+                                        torquent per conubia nostra, per
+                                        inceptos himenaeos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- FAQ -->
+
                     <div class="pagination__container">
                         <ul class="pagination">
                             <li>
@@ -635,54 +745,99 @@
             </section>
             <section class="information">
                 <div class="container">
-                        <div class="info-cards owl-carousel">
-                            <article>
-                                <img loading="lazy"
-                                    src="./img/blushing_bromeliad.png"
-                                    alt="Blushing Bromeliad">
-                                <div class="info">
-                                    <h3>Summer cactus
-                                        &amp; succulents
-                                    </h3>
-                                    <p>We are an online plant shop offering a
-                                        wide
-                                        range of cheap and trendy plants</p>
-                                    <a href="#" title="Find More">
-                                        <svg class="arrow-info" width="16"
-                                            role="img" aria-label="arrow icon"
-                                            height="16">
-                                            <use
-                                                href="./img/icons.svg#arrow-info"></use>
-                                        </svg>
-                                        Find More
-                                    </a>
-                                </div>
-                            </article>
-                            <article>
-                                <img loading="lazy"
-                                    src="./img/african_violet.png"
-                                    alt="African Violet">
-                                <div class="info">
-                                    <h3>Styling Trends
-                                        &amp; much more
-                                    </h3>
-                                    <p>We are an online plant shop offering a
-                                        wide
-                                        range
-                                        of cheap and trendy plants</p>
-                                    <a href="#" title="Find More">
-                                        <svg class="arrow-info" width="16"
-                                            role="img" aria-label="arrow icon"
-                                            height="16">
-                                            <use
-                                                href="./img/icons.svg#arrow-info"></use>
-                                        </svg>
-                                        Find More
-                                    </a>
-                                </div>
-                            </article>
-                        </div>
+                    <div class="info-cards owl-carousel">
+                        <article>
+                            <img loading="lazy"
+                                src="./img/blushing_bromeliad.png"
+                                alt="Blushing Bromeliad">
+                            <div class="info">
+                                <h3>Summer cactus
+                                    &amp; succulents
+                                </h3>
+                                <p>We are an online plant shop offering a
+                                    wide
+                                    range of cheap and trendy plants</p>
+                                <a href="#" title="Find More">
+                                    <svg class="arrow-info" width="16"
+                                        role="img" aria-label="arrow icon"
+                                        height="16">
+                                        <use
+                                            href="./img/icons.svg#arrow-info"></use>
+                                    </svg>
+                                    Find More
+                                </a>
+                            </div>
+                        </article>
+                        <article>
+                            <img loading="lazy"
+                                src="./img/african_violet.png"
+                                alt="African Violet">
+                            <div class="info">
+                                <h3>Styling Trends
+                                    &amp; much more
+                                </h3>
+                                <p>We are an online plant shop offering a
+                                    wide
+                                    range
+                                    of cheap and trendy plants</p>
+                                <a href="#" title="Find More">
+                                    <svg class="arrow-info" width="16"
+                                        role="img" aria-label="arrow icon"
+                                        height="16">
+                                        <use
+                                            href="./img/icons.svg#arrow-info"></use>
+                                    </svg>
+                                    Find More
+                                </a>
+                            </div>
+                        </article>
+                        <article>
+                            <img loading="lazy"
+                                src="./img/blushing_bromeliad.png"
+                                alt="Blushing Bromeliad">
+                            <div class="info">
+                                <h3>Summer cactus
+                                    &amp; succulents
+                                </h3>
+                                <p>We are an online plant shop offering a
+                                    wide
+                                    range of cheap and trendy plants</p>
+                                <a href="#" title="Find More">
+                                    <svg class="arrow-info" width="16"
+                                        role="img" aria-label="arrow icon"
+                                        height="16">
+                                        <use
+                                            href="./img/icons.svg#arrow-info"></use>
+                                    </svg>
+                                    Find More
+                                </a>
+                            </div>
+                        </article>
+                        <article>
+                            <img loading="lazy"
+                                src="./img/african_violet.png"
+                                alt="African Violet">
+                            <div class="info">
+                                <h3>Styling Trends
+                                    &amp; much more
+                                </h3>
+                                <p>We are an online plant shop offering a
+                                    wide
+                                    range
+                                    of cheap and trendy plants</p>
+                                <a href="#" title="Find More">
+                                    <svg class="arrow-info" width="16"
+                                        role="img" aria-label="arrow icon"
+                                        height="16">
+                                        <use
+                                            href="./img/icons.svg#arrow-info"></use>
+                                    </svg>
+                                    Find More
+                                </a>
+                            </div>
+                        </article>
                     </div>
+                </div>
             </section>
             <section class="blogs">
                 <div class="container">
@@ -1063,6 +1218,7 @@
             crossorigin="anonymous">
         </script>
         <script src="js/owl.carousel.js"></script>
+        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 

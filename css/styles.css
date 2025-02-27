@@ -41,12 +41,15 @@
   font-weight: normal;
   font-style: normal;
 }
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   background: #fff;
   font-family: "Cera Round Pro DEMO", sans-serif;
-  box-sizing: border-box;
 }
 
 .preloader {
@@ -128,4 +131,50 @@ body {
   .container {
     padding: 12px;
   }
+}
+
+.faq {
+  display: none;
+}
+
+.ui-accordion .ui-accordion-header {
+  padding: 20px 76px 20px 44px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  border: 1px solid #242424;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.ui-accordion .ui-accordion-content {
+  border: 1px solid #242424;
+  border-radius: 0 0 8px 8px;
+  border-top: none;
+  margin-bottom: 16px;
+}
+
+.ui-accordion .ui-accordion-header.ui-state-active {
+  border-radius: 8px 8px 0 0;
+  border-bottom: 0;
+  margin-bottom: 0;
+  color: black;
+}
+
+.ui-icon {
+  background-image: url("https://www.limitlessx.com/cdn/shop/t/68/assets/chevron-down.svg") !important;
+  background-position: 0;
+  text-indent: 0;
+  position: absolute;
+  right: 22px;
+  width: 32px;
+  height: 32px;
+  transition: 0.5s;
+  transform: rotate(-90deg);
+}
+
+.ui-accordion .ui-accordion-header.ui-state-active .ui-icon {
+  transform: rotate(0deg);
+  transition: 0.5s;
 }/*# sourceMappingURL=styles.css.map */
