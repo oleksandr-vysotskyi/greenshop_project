@@ -29,7 +29,6 @@
   }
   .logo-wrap a {
     cursor: pointer;
-    font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-size: 20px;
     line-height: 20px;
@@ -135,7 +134,6 @@
     text-align: center;
     color: #fff;
     overflow: hidden;
-    font-family: "Montserrat", sans-serif;
     font-size: 8vh;
     font-weight: 900;
     line-height: 1.15;
@@ -229,9 +227,9 @@
     transform: translateX(0%);
     transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
   }
-  body.nav-active .nav__list-item:nth-child(0) {
+  /* body.nav-active .nav__list-item:nth-child(0) {
     transition-delay: 0.7s;
-  }
+  } */
   body.nav-active .nav__list-item:nth-child(1) {
     transition-delay: 0.8s;
   }
