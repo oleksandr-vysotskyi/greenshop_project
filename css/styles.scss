@@ -133,6 +133,8 @@ body {
   margin: 0 9px 0 0;
   display: inline-block;
   animation: logos 5s ease-in-out 5s infinite;
+  z-index: 100;
+  position: relative;
 }
 
 @keyframes logos {

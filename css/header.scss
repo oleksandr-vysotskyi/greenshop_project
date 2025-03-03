@@ -19,6 +19,9 @@ header nav ul {
   display: flex;
   align-items: center;
   gap: 50px;
+  @include between-screen(414px, 430px) {
+    display: block;
+  }
   a {
     display: flex;
     align-items: center;
@@ -108,6 +111,9 @@ header .login {
     background-color: black;
     color: white;
   }
+  @include between-screen(414px, 430px) {
+    display: none;
+  }
 }
 
 header .header__login {
@@ -117,5 +123,12 @@ header .header__login {
   li:hover:not(:last-of-type) {
     scale: 1.3;
     transition: 0.5s;
+  }
+}
+
+.nav-but-wrap {
+  display: none;
+  @include between-screen(414px, 430px) {
+    display: inline-block;
   }
 }
