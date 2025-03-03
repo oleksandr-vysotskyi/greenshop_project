@@ -112,6 +112,7 @@
   background-color: rgba(70, 163, 88, 0.2);
   max-width: 210px;
   margin: 0 0 0 12px;
+  color: transparent;
   border: none;
 }
 
