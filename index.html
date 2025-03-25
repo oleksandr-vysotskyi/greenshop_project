@@ -3,15 +3,20 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover">
         <link
             href="https://fonts.cdnfonts.com/css/cera-round-pro-demo?styles=152405,152404,152403,152402"
             rel="stylesheet">
         <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+        <link rel="stylesheet" href="./css/owl.carousel.css">
+        <link rel="stylesheet" href="./css/owl.theme.default.css">
+        <link rel="stylesheet"
+            href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/mob_menu.css">
         <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" href="./css/media.css">
         <title>Greenshop</title>
     </head>
 
@@ -25,107 +30,104 @@
                     from="1 1" to="2 2" dur="5s" repeatCount="indefinite" />
             </svg>
         </div>
-        <header>
-            <div class="container">
+
+        <header class="cd-header">
+            <div class="header-wrapper container">
                 <a href="/index.html" class="logo" title="Greenshop">
                     <svg class="greenshop-icon" width="150" height="35"
                         role="img" aria-label="Greenshop">
                         <use href="./img/icons.svg#greenshop"></use>
                     </svg>
                 </a>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#" title="Home">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Shop">
-                                Shop
-                            </a>
-                        </li>
-                        <li class="drop">
-                            <a href="#" title="Plant Care">
-                                Plant Care
-                            </a>
-                            <ul class="dropdown">
-                                <li>
-                                    <a href="#" title="Drainage">
-                                        Drainage
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Fungicides">
-                                        Fungicides
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Fertilizer">
-                                        Fertilizer
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="priming" href="#" title="Priming">
-                                        Priming
-                                        <svg class="arrow-menu" width="7"
-                                            height="10">
-                                            <use
-                                                href="./img/icons.svg#arrow_menu"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" title="Blogs">
-                                Blogs
-                            </a>
-                        </li>
-                    </ul>
+                <nav class="nav">
+                    <div class="nav__content">
+                        <ul class="nav__list">
+                            <li class="nav__list-item active-nav">
+                                <a href="#" title="Home"
+                                    class="hover-target">Home
+                                </a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#" title="Shop"
+                                    class="hover-target">Shop</a>
+                            </li>
+                            <li class="nav__list-item drop">
+                                <a href="#" title="Plant Care"
+                                    class="hover-target">Plant Care</a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a href="#"
+                                            title="Drainage">Drainage</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            title="Fungicides">Fungicides</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            title="Fertilizer">Fertilizer</a>
+                                    </li>
+                                    <li>
+                                        <a class="priming" href="#"
+                                            title="Priming">
+                                            Priming
+                                            <svg class="arrow-menu" width="7"
+                                                height="10">
+                                                <use
+                                                    href="./img/icons.svg#arrow_menu"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#" title="Blogs">
+                                    Blogs
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
                 <ul class="header__login">
                     <li>
-                        <a href="#"
-                            title="search" class="search-icon-header">
-                            <svg width="20"
-                                height="20"
-                                role="img" aria-label="login icon">
-                                <use
-                                    href="./img/icons.svg#search_icon">
-                                </use>
+                        <a href="#" title="search" class="search-icon-header">
+                            <svg width="20" height="20" role="img"
+                                aria-label="search icon">
+                                <use href="./img/icons.svg#search_icon"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a href="#"
-                            title="cart" class="cart-icon-header">
-                            <svg width="29"
-                                height="24"
-                                role="img" aria-label="cart icon">
+                        <a href="#" title="cart" class="cart-icon-header">
+                            <svg width="29" height="24" role="img"
+                                aria-label="cart icon">
                                 <use
-                                    href="./img/icons.svg#cart_icon_header">
-                                </use>
+                                    href="./img/icons.svg#cart_icon_header"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a href="./registration.html" class="login"
                             title="login">
-                            <svg width="20"
-                                height="20"
-                                role="img" aria-label="login icon">
-                                <use
-                                    href="./img/icons.svg#login">
-                                </use>
+                            <svg width="20" height="20" role="img"
+                                aria-label="login icon">
+                                <use href="./img/icons.svg#login"></use>
                             </svg>
                             Login
                         </a>
                     </li>
                 </ul>
+                <div class="nav-but-wrap">
+                    <div class="menu-icon hover-target">
+                        <span
+                            class="menu-icon__line menu-icon__line-left"></span>
+                        <span class="menu-icon__line"></span>
+                        <span
+                            class="menu-icon__line menu-icon__line-right"></span>
+                    </div>
+                </div>
             </div>
         </header>
-
         <main>
             <section class="banner">
                 <div class="container">
@@ -137,16 +139,25 @@
                             </span>
                         </h1>
                         <p class="description">We are an online plant shop
-                            offering a wide range of cheap and trendy plants.
+                            offering a wide range of cheap and trendy
+                            plants.
                             Use our plants to
-                            create an unique Urban Jungle. Order your favorite
+                            create an unique Urban Jungle. Order your
+                            favorite
                             plants!</p>
-                        <a class="shop-now" href="#" title="Shop Now">
+                        <a class="shop-now-desk" href="#" title="Shop Now">
                             Shop Now
                         </a>
                     </article>
-                    <img loading="lazy" max-width="517px"
-                        src="./img/flower_pot.png" alt="banner">
+                    <article class="image__container">
+                        <img loading="lazy" width="517"
+                            src="./img/flower_pot.png" alt="banner">
+                    </article>
+                    <div class="shop">
+                        <a class="shop-now-mob" href="#" title="Shop Now">
+                            Shop Now
+                        </a>
+                    </div>
                 </div>
             </section>
             <section class="products">
@@ -237,7 +248,44 @@
                                 </li>
                             </ul>
                         </div>
-                        <img loading="lazy" width="310px"
+                        <div class="price__range">
+                            <h3>Price Range</h3>
+                            <div class="slider__range"
+                                id="slider-range"></div>
+                            <p>
+                                <label for="amount">Price:</label>
+                                <input type="text" id="amount" readonly>
+                            </p>
+                            <a href="#">Filter</a>
+                            <h3>Size</h3>
+                            <ul class="size">
+                                <li>
+                                    <a href="#">
+                                        Small
+                                        <span>
+                                            (119)
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Medium
+                                        <span>
+                                            (86)
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Large
+                                        <span>
+                                            (78)
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <img loading="lazy" width="310"
                             src="./img/super_sale.png"
                             alt="image-sale">
                     </div>
@@ -284,17 +332,21 @@
                                 <p>$119.00</p>
                                 <ul class="action">
                                     <li>
-                                        <svg class="icons cart-icon" width="20"
+                                        <svg class="icons cart-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="cart icon">
+                                            role="img"
+                                            aria-label="cart icon">
                                             <use
                                                 href="./img/icons.svg#cart_icon"></use>
                                         </svg>
                                     </li>
                                     <li>
-                                        <svg class="icons like-icon" width="20"
+                                        <svg class="icons like-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="like icon">
+                                            role="img"
+                                            aria-label="like icon">
                                             <use
                                                 href="./img/icons.svg#like_icon"></use>
                                         </svg>
@@ -303,7 +355,8 @@
                                         <svg class="icons search-icon"
                                             width="20"
                                             height="20"
-                                            role="img" aria-label="search icon">
+                                            role="img"
+                                            aria-label="search icon">
                                             <use
                                                 href="./img/icons.svg#search_icon"></use>
                                         </svg>
@@ -318,17 +371,21 @@
                                 <p>$169.00</p>
                                 <ul class="action">
                                     <li>
-                                        <svg class="icons cart-icon" width="20"
+                                        <svg class="icons cart-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="cart icon">
+                                            role="img"
+                                            aria-label="cart icon">
                                             <use
                                                 href="./img/icons.svg#cart_icon"></use>
                                         </svg>
                                     </li>
                                     <li>
-                                        <svg class="icons like-icon" width="20"
+                                        <svg class="icons like-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="like icon">
+                                            role="img"
+                                            aria-label="like icon">
                                             <use
                                                 href="./img/icons.svg#like_icon"></use>
                                         </svg>
@@ -337,7 +394,8 @@
                                         <svg class="icons search-icon"
                                             width="20"
                                             height="20"
-                                            role="img" aria-label="search icon">
+                                            role="img"
+                                            aria-label="search icon">
                                             <use
                                                 href="./img/icons.svg#search_icon"></use>
                                         </svg>
@@ -355,17 +413,21 @@
                                 <span>13% OFF</span>
                                 <ul class="action">
                                     <li>
-                                        <svg class="icons cart-icon" width="20"
+                                        <svg class="icons cart-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="cart icon">
+                                            role="img"
+                                            aria-label="cart icon">
                                             <use
                                                 href="./img/icons.svg#cart_icon"></use>
                                         </svg>
                                     </li>
                                     <li>
-                                        <svg class="icons like-icon" width="20"
+                                        <svg class="icons like-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="like icon">
+                                            role="img"
+                                            aria-label="like icon">
                                             <use
                                                 href="./img/icons.svg#like_icon"></use>
                                         </svg>
@@ -374,7 +436,8 @@
                                         <svg class="icons search-icon"
                                             width="20"
                                             height="20"
-                                            role="img" aria-label="search icon">
+                                            role="img"
+                                            aria-label="search icon">
                                             <use
                                                 href="./img/icons.svg#search_icon"></use>
                                         </svg>
@@ -389,17 +452,21 @@
                                 <p>$129.00</p>
                                 <ul class="action">
                                     <li>
-                                        <svg class="icons cart-icon" width="20"
+                                        <svg class="icons cart-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="cart icon">
+                                            role="img"
+                                            aria-label="cart icon">
                                             <use
                                                 href="./img/icons.svg#cart_icon"></use>
                                         </svg>
                                     </li>
                                     <li>
-                                        <svg class="icons like-icon" width="20"
+                                        <svg class="icons like-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="like icon">
+                                            role="img"
+                                            aria-label="like icon">
                                             <use
                                                 href="./img/icons.svg#like_icon"></use>
                                         </svg>
@@ -408,7 +475,8 @@
                                         <svg class="icons search-icon"
                                             width="20"
                                             height="20"
-                                            role="img" aria-label="search icon">
+                                            role="img"
+                                            aria-label="search icon">
                                             <use
                                                 href="./img/icons.svg#search_icon"></use>
                                         </svg>
@@ -423,17 +491,21 @@
                                 <p>$139.00</p>
                                 <ul class="action">
                                     <li>
-                                        <svg class="icons cart-icon" width="20"
+                                        <svg class="icons cart-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="cart icon">
+                                            role="img"
+                                            aria-label="cart icon">
                                             <use
                                                 href="./img/icons.svg#cart_icon"></use>
                                         </svg>
                                     </li>
                                     <li>
-                                        <svg class="icons like-icon" width="20"
+                                        <svg class="icons like-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="like icon">
+                                            role="img"
+                                            aria-label="like icon">
                                             <use
                                                 href="./img/icons.svg#like_icon"></use>
                                         </svg>
@@ -442,7 +514,8 @@
                                         <svg class="icons search-icon"
                                             width="20"
                                             height="20"
-                                            role="img" aria-label="search icon">
+                                            role="img"
+                                            aria-label="search icon">
                                             <use
                                                 href="./img/icons.svg#search_icon"></use>
                                         </svg>
@@ -457,17 +530,21 @@
                                 <p>$179.00</p>
                                 <ul class="action">
                                     <li>
-                                        <svg class="icons cart-icon" width="20"
+                                        <svg class="icons cart-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="cart icon">
+                                            role="img"
+                                            aria-label="cart icon">
                                             <use
                                                 href="./img/icons.svg#cart_icon"></use>
                                         </svg>
                                     </li>
                                     <li>
-                                        <svg class="icons like-icon" width="20"
+                                        <svg class="icons like-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="like icon">
+                                            role="img"
+                                            aria-label="like icon">
                                             <use
                                                 href="./img/icons.svg#like_icon"></use>
                                         </svg>
@@ -476,7 +553,8 @@
                                         <svg class="icons search-icon"
                                             width="20"
                                             height="20"
-                                            role="img" aria-label="search icon">
+                                            role="img"
+                                            aria-label="search icon">
                                             <use
                                                 href="./img/icons.svg#search_icon"></use>
                                         </svg>
@@ -491,17 +569,21 @@
                                 <p>$99.00</p>
                                 <ul class="action">
                                     <li>
-                                        <svg class="icons cart-icon" width="20"
+                                        <svg class="icons cart-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="cart icon">
+                                            role="img"
+                                            aria-label="cart icon">
                                             <use
                                                 href="./img/icons.svg#cart_icon"></use>
                                         </svg>
                                     </li>
                                     <li>
-                                        <svg class="icons like-icon" width="20"
+                                        <svg class="icons like-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="like icon">
+                                            role="img"
+                                            aria-label="like icon">
                                             <use
                                                 href="./img/icons.svg#like_icon"></use>
                                         </svg>
@@ -510,7 +592,8 @@
                                         <svg class="icons search-icon"
                                             width="20"
                                             height="20"
-                                            role="img" aria-label="search icon">
+                                            role="img"
+                                            aria-label="search icon">
                                             <use
                                                 href="./img/icons.svg#search_icon"></use>
                                         </svg>
@@ -525,17 +608,21 @@
                                 <p>$59.00</p>
                                 <ul class="action">
                                     <li>
-                                        <svg class="icons cart-icon" width="20"
+                                        <svg class="icons cart-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="cart icon">
+                                            role="img"
+                                            aria-label="cart icon">
                                             <use
                                                 href="./img/icons.svg#cart_icon"></use>
                                         </svg>
                                     </li>
                                     <li>
-                                        <svg class="icons like-icon" width="20"
+                                        <svg class="icons like-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="like icon">
+                                            role="img"
+                                            aria-label="like icon">
                                             <use
                                                 href="./img/icons.svg#like_icon"></use>
                                         </svg>
@@ -544,7 +631,8 @@
                                         <svg class="icons search-icon"
                                             width="20"
                                             height="20"
-                                            role="img" aria-label="search icon">
+                                            role="img"
+                                            aria-label="search icon">
                                             <use
                                                 href="./img/icons.svg#search_icon"></use>
                                         </svg>
@@ -559,17 +647,21 @@
                                 <p>$39.00</p>
                                 <ul class="action">
                                     <li>
-                                        <svg class="icons cart-icon" width="20"
+                                        <svg class="icons cart-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="cart icon">
+                                            role="img"
+                                            aria-label="cart icon">
                                             <use
                                                 href="./img/icons.svg#cart_icon"></use>
                                         </svg>
                                     </li>
                                     <li>
-                                        <svg class="icons like-icon" width="20"
+                                        <svg class="icons like-icon"
+                                            width="20"
                                             height="20"
-                                            role="img" aria-label="like icon">
+                                            role="img"
+                                            aria-label="like icon">
                                             <use
                                                 href="./img/icons.svg#like_icon"></use>
                                         </svg>
@@ -578,7 +670,8 @@
                                         <svg class="icons search-icon"
                                             width="20"
                                             height="20"
-                                            role="img" aria-label="search icon">
+                                            role="img"
+                                            aria-label="search icon">
                                             <use
                                                 href="./img/icons.svg#search_icon"></use>
                                         </svg>
@@ -587,6 +680,94 @@
                             </article>
                         </div>
                     </div>
+
+                    <!-- FAQ -->
+                    <section class="faq">
+                        <div class="container">
+                            <div id="accordion">
+                                <h3>Section 1</h3>
+                                <div>
+                                    <p>
+                                        Mauris mauris ante, blandit et,
+                                        ultrices
+                                        a, suscipit eget, quam. Integer
+                                        ut neque. Vivamus nisi metus,
+                                        molestie
+                                        vel, gravida in, condimentum sit
+                                        amet, nunc. Nam a nibh. Donec
+                                        suscipit
+                                        eros. Nam mi. Proin viverra leo ut
+                                        odio. Curabitur malesuada.
+                                        Vestibulum a
+                                        velit eu ante scelerisque vulputate.
+                                    </p>
+                                </div>
+                                <h3>Section 2</h3>
+                                <div>
+                                    <p>
+                                        Sed non urna. Donec et ante.
+                                        Phasellus
+                                        eu ligula. Vestibulum sit amet
+                                        purus. Vivamus hendrerit, dolor at
+                                        aliquet laoreet, mauris turpis
+                                        porttitor
+                                        velit, faucibus interdum tellus
+                                        libero
+                                        ac justo. Vivamus non quam. In
+                                        suscipit faucibus urna.
+                                    </p>
+                                </div>
+                                <h3>Section 3</h3>
+                                <div>
+                                    <p>
+                                        Nam enim risus, molestie et, porta
+                                        ac,
+                                        aliquam ac, risus. Quisque lobortis.
+                                        Phasellus pellentesque purus in
+                                        massa.
+                                        Aenean in pede. Phasellus ac libero
+                                        ac tellus pellentesque semper. Sed
+                                        ac
+                                        felis. Sed commodo, magna quis
+                                        lacinia ornare, quam ante aliquam
+                                        nisi,
+                                        eu iaculis leo purus venenatis dui.
+                                    </p>
+                                    <ul>
+                                        <li>List item one</li>
+                                        <li>List item two</li>
+                                        <li>List item three</li>
+                                    </ul>
+                                </div>
+                                <h3>Section 4</h3>
+                                <div>
+                                    <p>
+                                        Cras dictum. Pellentesque habitant
+                                        morbi
+                                        tristique senectus et netus
+                                        et malesuada fames ac turpis
+                                        egestas.
+                                        Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices
+                                        posuere
+                                        cubilia Curae; Aenean lacinia
+                                        mauris vel est.
+                                    </p>
+                                    <p>
+                                        Suspendisse eu nisl. Nullam ut
+                                        libero.
+                                        Integer dignissim consequat lectus.
+                                        Class aptent taciti sociosqu ad
+                                        litora
+                                        torquent per conubia nostra, per
+                                        inceptos himenaeos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- FAQ -->
+
                     <div class="pagination__container">
                         <ul class="pagination">
                             <li>
@@ -626,7 +807,52 @@
             </section>
             <section class="information">
                 <div class="container">
-                    <div class="info-cards">
+                    <div class="info-cards owl-carousel">
+                        <article>
+                            <img loading="lazy"
+                                src="./img/blushing_bromeliad.png"
+                                alt="Blushing Bromeliad">
+                            <div class="info">
+                                <h3>Summer cactus
+                                    &amp; succulents
+                                </h3>
+                                <p>We are an online plant shop offering a
+                                    wide
+                                    range of cheap and trendy plants</p>
+                                <a href="#" title="Find More">
+                                    <svg class="arrow-info" width="16"
+                                        role="img" aria-label="arrow icon"
+                                        height="16">
+                                        <use
+                                            href="./img/icons.svg#arrow-info"></use>
+                                    </svg>
+                                    Find More
+                                </a>
+                            </div>
+                        </article>
+                        <article>
+                            <img loading="lazy"
+                                src="./img/african_violet.png"
+                                alt="African Violet">
+                            <div class="info">
+                                <h3>Styling Trends
+                                    &amp; much more
+                                </h3>
+                                <p>We are an online plant shop offering a
+                                    wide
+                                    range
+                                    of cheap and trendy plants</p>
+                                <a href="#" title="Find More">
+                                    <svg class="arrow-info" width="16"
+                                        role="img" aria-label="arrow icon"
+                                        height="16">
+                                        <use
+                                            href="./img/icons.svg#arrow-info"></use>
+                                    </svg>
+                                    Find More
+                                </a>
+                            </div>
+                        </article>
                         <article>
                             <img loading="lazy"
                                 src="./img/blushing_bromeliad.png"
@@ -1049,6 +1275,14 @@
                 </div>
             </footer>
         </main>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous">
+        </script>
+        <script src="js/owl.carousel.js"></script>
+        <script
+            src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+        <script src="js/scripts.js"></script>
     </body>
 
 </html>

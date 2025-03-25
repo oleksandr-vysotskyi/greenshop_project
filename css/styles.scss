@@ -1,47 +1,65 @@
-@import url("registration.css");
-@import url("header.css");
-@import url("banner.css");
-@import url("products.css");
-@import url("info.css");
-@import url("blogs.css");
-@import url("garden-tips.css");
-@import url("footer.css");
 @font-face {
   font-family: "cera_problack";
   src: url("cera_pro_black-webfont.eot");
-  src: url("cera_pro_black-webfont.eot?#iefix") format("embedded-opentype"), url("cera_pro_black-webfont.woff2") format("woff2"), url("cera_pro_black-webfont.woff") format("woff"), url("cera_pro_black-webfont.svg#cera_problack") format("svg");
+  src: url("cera_pro_black-webfont.eot?#iefix") format("embedded-opentype"),
+    url("cera_pro_black-webfont.woff2") format("woff2"),
+    url("cera_pro_black-webfont.woff") format("woff"),
+    url("cera_pro_black-webfont.svg#cera_problack") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "fontspring_demo_-_cera_proBd";
   src: url("fontspring-demo-cerapro-bold-webfont.eot");
-  src: url("fontspring-demo-cerapro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fontspring-demo-cerapro-bold-webfont.woff2") format("woff2"), url("fontspring-demo-cerapro-bold-webfont.woff") format("woff"), url("fontspring-demo-cerapro-bold-webfont.svg#fontspring_demo_-_cera_proBd") format("svg");
+  src: url("fontspring-demo-cerapro-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fontspring-demo-cerapro-bold-webfont.woff2") format("woff2"),
+    url("fontspring-demo-cerapro-bold-webfont.woff") format("woff"),
+    url("fontspring-demo-cerapro-bold-webfont.svg#fontspring_demo_-_cera_proBd")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "cera_prolight";
   src: url("fontspring-demo-cerapro-light-webfont.eot");
-  src: url("fontspring-demo-cerapro-light-webfont.eot?#iefix") format("embedded-opentype"), url("fontspring-demo-cerapro-light-webfont.woff2") format("woff2"), url("fontspring-demo-cerapro-light-webfont.woff") format("woff"), url("fontspring-demo-cerapro-light-webfont.svg#cera_prolight") format("svg");
+  src: url("fontspring-demo-cerapro-light-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fontspring-demo-cerapro-light-webfont.woff2") format("woff2"),
+    url("fontspring-demo-cerapro-light-webfont.woff") format("woff"),
+    url("fontspring-demo-cerapro-light-webfont.svg#cera_prolight") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "cera_promedium";
   src: url("fontspring-demo-cerapro-medium-webfont.eot");
-  src: url("fontspring-demo-cerapro-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fontspring-demo-cerapro-medium-webfont.woff2") format("woff2"), url("fontspring-demo-cerapro-medium-webfont.woff") format("woff"), url("fontspring-demo-cerapro-medium-webfont.svg#cera_promedium") format("svg");
+  src: url("fontspring-demo-cerapro-medium-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fontspring-demo-cerapro-medium-webfont.woff2") format("woff2"),
+    url("fontspring-demo-cerapro-medium-webfont.woff") format("woff"),
+    url("fontspring-demo-cerapro-medium-webfont.svg#cera_promedium")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "fontspring_demo_-_cera_proRg";
   src: url("fontspring-demo-cerapro-regular-webfont.eot");
-  src: url("fontspring-demo-cerapro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fontspring-demo-cerapro-regular-webfont.woff2") format("woff2"), url("fontspring-demo-cerapro-regular-webfont.woff") format("woff"), url("fontspring-demo-cerapro-regular-webfont.svg#fontspring_demo_-_cera_proRg") format("svg");
+  src: url("fontspring-demo-cerapro-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fontspring-demo-cerapro-regular-webfont.woff2") format("woff2"),
+    url("fontspring-demo-cerapro-regular-webfont.woff") format("woff"),
+    url("fontspring-demo-cerapro-regular-webfont.svg#fontspring_demo_-_cera_proRg")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
-* {
+*{
   box-sizing: border-box;
 }
 
@@ -51,6 +69,8 @@ body {
   background: #fff;
   font-family: "Cera Round Pro DEMO", sans-serif;
 }
+
+@import url("registration.css");
 
 .preloader {
   display: block;
@@ -82,11 +102,13 @@ body {
     stroke-dashoffset: 0;
     transform: rotateY(180deg) rotate(360deg);
   }
+
   100% {
     stroke-dashoffset: 240;
     transform: rotateY(180deg) rotate(0deg);
   }
 }
+
 .preloader .small-circle {
   stroke-dasharray: 210;
   stroke-dashoffset: 210;
@@ -100,11 +122,13 @@ body {
     stroke-dashoffset: 0;
     transform: rotate(0deg);
   }
+
   100% {
     stroke-dashoffset: 210;
     transform: rotate(360deg);
   }
 }
+
 .logo {
   margin: 0 9px 0 0;
   display: inline-block;
@@ -117,10 +141,20 @@ body {
   0% {
     transform: rotate(0);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
+@import url("header.css");
+
+@mixin between-screen($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
@@ -128,9 +162,7 @@ body {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-}
-@media screen and (min-width: 414px) and (max-width: 430px) {
-  .container {
+  @include between-screen(414px, 430px) {
     padding: 12px;
   }
 }
@@ -179,4 +211,16 @@ body {
 .ui-accordion .ui-accordion-header.ui-state-active .ui-icon {
   transform: rotate(0deg);
   transition: 0.5s;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+@import url("banner.css");
+
+@import url("products.css");
+
+@import url("info.css");
+
+@import url("blogs.css");
+
+@import url("garden-tips.css");
+
+@import url("footer.css");

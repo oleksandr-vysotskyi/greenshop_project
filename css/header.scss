@@ -1,0 +1,134 @@
+@mixin between-screen($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+header .container {
+  padding-top: 30px;
+  margin-bottom: 12px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #f5f5f580;
+  @include between-screen(414px, 430px) {
+    margin-bottom: 0;
+    padding: 12px;
+  }
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  @include between-screen(414px, 430px) {
+    display: block;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    font-size: 1rem;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      background-color: #46a358;
+      height: 2px;
+      position: absolute;
+      bottom: -30px;
+      width: 0;
+      transition: 0.4s;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+  }
+  li {
+    position: relative;
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 10px;
+      left: -60px;
+      padding-top: 40px;
+    }
+    @include between-screen(414px, 430px) {
+      display: none;
+    }
+  }
+  .dropdown {
+    a::before {
+      display: none;
+    }
+    a {
+      padding: 8px 14px;
+      min-width: 188px;
+      display: inline-block;
+      background-color: #edf6ee;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #3d3d3d;
+      transition: 0.3s;
+      position: relative;
+    }
+    a:hover {
+      background-color: #1a712a;
+      color: #fff;
+    }
+    li .priming {
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      &:hover svg {
+        stroke: #fff;
+        transform: rotate(180deg);
+        transition: 0.5s ease-out;
+        stroke-width: 1.2;
+      }
+    }
+  }
+  .drop:hover .dropdown {
+    display: block;
+  }
+}
+
+header .login {
+  background: #46a358;
+  border-radius: 6px;
+  padding: 7px 17px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+  transition: 0.4s;
+  svg {
+    margin-right: 4px;
+  }
+  &:hover {
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+  }
+  @include between-screen(414px, 430px) {
+    display: none;
+  }
+}
+
+header .header__login {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  li:hover:not(:last-of-type) {
+    scale: 1.3;
+    transition: 0.5s;
+  }
+}
+
+.nav-but-wrap {
+  display: none;
+  @include between-screen(414px, 430px) {
+    display: inline-block;
+  }
+}

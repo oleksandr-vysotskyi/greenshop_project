@@ -1,0 +1,112 @@
+@mixin between-screen($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+.blogs {
+  margin-bottom: 100px;
+  @include between-screen(414px, 430px) {
+    margin: 0 0 80px;
+  }
+  .container {
+    display: inherit;
+  }
+  .blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 35px;
+    h3 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 16px;
+      color: #3d3d3d;
+      @include between-screen(414px, 430px) {
+        max-width: 215px;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #727272;
+      @include between-screen(414px, 430px) {
+        max-width: 205px;
+        text-align: center;
+      }
+    }
+    @include between-screen(414px, 430px) {
+      margin: 0 0 24px;
+    }
+  }
+  .blog-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-flow: row wrap;
+    h5 {
+      margin-bottom: 4px;
+      max-width: 189px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 26px;
+      color: #3d3d3d;
+    }
+    p:last-of-type {
+      margin-bottom: 9px;
+      max-width: 242px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: #727272;
+    }
+    a {
+      display: flex;
+      gap: 3px;
+      margin-bottom: 13px;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #3d3d3d;
+      stroke: #3d3d3d;
+      stroke-width: 0.45;
+      &:hover {
+        color: #46a358;
+        stroke: #46a358;
+        stroke-width: 0.45;
+      }
+    }
+    article {
+      background-color: #fbfbfb;
+      @include between-screen(414px, 430px) {
+        &:not(:last-of-type) {
+          margin-bottom: 40px;
+        }
+      }
+      .blog-img {
+        margin-bottom: 8px;
+      }
+      .blog-card {
+        padding-left: 10px;
+        .arrow-blogs {
+          order: 1;
+        }
+        p:first-of-type {
+          margin-bottom: 4px;
+          max-width: 222px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          color: #46a358;
+        }
+      }
+    }
+    @include between-screen(414px, 430px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

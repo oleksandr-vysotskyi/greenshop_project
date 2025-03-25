@@ -1,0 +1,147 @@
+.banner {
+  margin-bottom: 48px;
+}
+.banner .container {
+  background-color: #fbfbfb;
+  padding: 0 0 0 43px;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 414px) and (max-width: 430px) {
+  .banner .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 12px 12px;
+    box-sizing: border-box;
+  }
+}
+.banner h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1rem;
+  margin-bottom: 7px;
+  padding-top: 68px;
+}
+@media screen and (min-width: 414px) and (max-width: 430px) {
+  .banner h3 {
+    max-width: 205px;
+    padding: 0;
+  }
+}
+.banner h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 70px;
+  line-height: 70px;
+  margin-bottom: 5px;
+  max-width: 700px;
+}
+@media screen and (min-width: 414px) and (max-width: 430px) {
+  .banner h1 {
+    max-width: 318px;
+    font-size: 42px;
+    margin-bottom: 12px;
+    line-height: 100%;
+  }
+}
+.banner h1 span {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 70px;
+  line-height: 70px;
+  color: #46a358;
+}
+@media screen and (min-width: 414px) and (max-width: 430px) {
+  .banner h1 span {
+    font-size: 42px;
+    line-height: 100%;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 430px) {
+  .banner article:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.banner .description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 44px;
+  max-width: 530px;
+}
+@media screen and (min-width: 414px) and (max-width: 430px) {
+  .banner .description {
+    max-width: 345px;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 16px;
+  }
+}
+.banner .shop-now-desk {
+  display: inline-block;
+  background: #46a358;
+  text-transform: uppercase;
+  padding: 11px 27px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #fff;
+  border-radius: 6px;
+  margin-bottom: 85px;
+}
+@media screen and (min-width: 414px) and (max-width: 430px) {
+  .banner .shop-now-desk {
+    display: none;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 430px) {
+  .banner .shop {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 46px;
+  }
+}
+.banner .shop .shop-now-mob {
+  display: none;
+  background: #46a358;
+  text-transform: uppercase;
+  padding: 11px 27px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #fff;
+  border-radius: 6px;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 414px) and (max-width: 430px) {
+  .banner .shop .shop-now-mob {
+    display: inline-block;
+  }
+}
+.banner .shop-now-desk:hover {
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+}
+.banner .image__container {
+  display: flex;
+}
+@media screen and (min-width: 414px) and (max-width: 430px) {
+  .banner .image__container {
+    justify-content: center;
+  }
+}
+.banner .image__container img {
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 414px) and (max-width: 430px) {
+  .banner .image__container img {
+    max-width: 60%;
+    margin: 0 0 12px;
+  }
+}/*# sourceMappingURL=banner.css.map */
